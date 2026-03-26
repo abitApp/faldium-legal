@@ -1,193 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Terms & Conditions — Faldium</title>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms & Conditions — Faldium</title>
 
-    :root {
-      --bg: #0C082A;
-      --surface: #16123D;
-      --text: #ECECEC;
-      --muted: #9499C3;
-      --accent: #D4A373;
-      --border: #252152;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    body {
-      font-family: 'Figtree', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      padding: 0 1rem 4rem;
-    }
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    header {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 3rem 0 2rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 3rem;
-    }
+:root {
+  --bg: #0C082A;
+  --surface: #16123D;
+  --text: #ECECEC;
+  --muted: #9499C3;
+  --accent: #D4A373;
+  --border: #252152;
+}
 
-    .logo {
-      font-size: 1.6rem;
-      color: var(--accent);
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-    }
+body {
+  font-family: 'Figtree', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 0 1rem 4rem;
+}
 
-    h1 {
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      font-weight: 400;
-      color: var(--text);
-      margin-bottom: 0.75rem;
-    }
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
 
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-    }
+h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
 
-    section {
-      margin-bottom: 2.5rem;
-    }
+.lang-switch {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
 
-    h2 {  
-      font-size: 1rem;
-      font-weight: 700;  
-      color: var(--text);  
-      margin-bottom: 1rem;  
-      display: flex;  
-      align-items: center;  
-      gap: 0.75rem;
-    }
+.lang-switch button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  margin-right: 10px;
+}
 
-    h2 .num {
-      font-size: 0.7rem;
-      font-weight: 500;
-      color: var(--accent);
-      background: rgba(212, 163, 115, 0.1);
-      padding: 0.15rem 0.5rem;
-      border-radius: 20px;
-    }
+main { max-width: 720px; margin: 0 auto; }
 
-    p {
-      font-size: 0.95rem;
-      line-height: 1.8;
-      color: var(--text);
-      opacity: 0.9;
-      margin-bottom: 0.75rem;
-    }
+section { margin-bottom: 2rem; }
+h2 { font-size: 1rem; margin-bottom: 0.7rem; }
+p, li { font-size: 0.95rem; line-height: 1.7; opacity: 0.9; }
 
-    ul {
-      list-style: none;
-      margin: 0.5rem 0 0.75rem 0;
-    }
+ul { margin-left: 1rem; }
 
-    ul li {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: var(--text);
-      opacity: 0.9;
-      padding: 0.3rem 0 0.3rem 1.25rem;
-      position: relative;
-    }
-
-    ul li::before {
-      content: '→';
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-    }
-
-    .highlight-box {
-      background: var(--surface);
-      border-left: 3px solid var(--accent);
-      padding: 1rem 1.25rem;
-      margin: 1rem 0;
-      font-size: 0.9rem;
-      color: var(--accent);
-      font-weight: 700;
-    }
-
-    .contact-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem 1.5rem;
-    }
-
-    .contact-card a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    footer {
-      max-width: 720px;
-      margin: 3rem auto 0;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.8rem;
-      color: var(--muted);
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
+.highlight {
+  background: var(--surface);
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Terms & Conditions</h1>
-  </header>
+<header>
+  <h1>Terms & Conditions</h1>
 
-  <main>
-    <section>
-      <h2><span class="num">01</span> Entertainment Purpose Only</h2>
-      <p>Faldium is an AI-powered entertainment application. The readings provided by our artificial intelligence are for <strong>entertainment purposes only</strong>. They do not constitute factual predictions, legal advice, or medical guidance.</p>
-      <div class="highlight-box">Interpretations are subjective and generated based on AI visual analysis.</div>
-    </section>
+  <div class="lang-switch">
+    🌐 
+    <button onclick="setLang('en')">English</button> | 
+    <button onclick="setLang('tr')">Türkçe</button>
+  </div>
+</header>
 
-    <section>
-      <h2><span class="num">02</span> Pricing & Payments</h2>
-      <p>Users can access a free summary reading. A detailed premium reading is available for <strong>99 TL</strong> per transaction.</p>
-      <ul>
-        <li>Payments are processed securely through Google Play Billing.</li>
-        <li>Prices are subject to change based on regional taxes or promotional offers.</li>
-        <li>As digital content is delivered instantly upon purchase, <strong>all sales are final and non-refundable</strong>.</li>
-      </ul>
-    </section>
+<main id="content"></main>
 
-    <section>
-      <h2><span class="num">03</span> Camera Usage & Content</h2>
-      <p>By using Faldium, you agree to provide access to your device's camera to capture photos of coffee grounds. You represent that you have the right to upload such images and that they do not violate any third-party rights.</p>
-    </section>
+<script>
 
-    <section>
-      <h2><span class="num">04</span> Intellectual Property</h2>
-      <p>All content within the app, including the AI-generated text, logos, and design elements, is the property of ABit. Users are granted a limited license to use the app for personal, non-commercial use.</p>
-    </section>
+const content = {
 
-    <section>
-      <h2><span class="num">05</span> Disclaimer of Liability</h2>
-      <p>ABit shall not be held liable for any decisions made or actions taken by users based on the readings provided. Use of the service is at your own discretion and risk.</p>
-    </section>
+en: `
+<section>
+<h2>Entertainment Only</h2>
+<p>Faldium is an AI-powered entertainment application. All readings are generated for entertainment purposes only and do not constitute real predictions, professional advice, or factual information.</p>
+<div class="highlight">
+Do not make personal, financial, medical, or legal decisions based on the content.
+</div>
+</section>
 
-    <section>
-      <h2><span class="num">06</span> Contact Information</h2>
-      <div class="contact-card">
-        For support and payment inquiries: <a href="mailto:support@abit.com">support@abit.com</a>
-      </div>
-    </section>
-  </main>
+<section>
+<h2>Payments & Purchases</h2>
+<p>We offer free and premium readings.</p>
+<ul>
+<li>Payments are processed via Google Play Billing</li>
+<li>Prices may vary by region and taxes</li>
+<li>Digital purchases are generally non-refundable once delivered</li>
+</ul>
+<p>Refunds are subject to Google Play’s policies.</p>
+</section>
 
-  <footer>
-    <span>© 2026 Faldium (ABit).</span>
-    <a href="privacy-policy.html">Privacy Policy →</a>
-  </footer>
+<section>
+<h2>Use of Service</h2>
+<p>You agree to use the app responsibly and not misuse, exploit, or attempt to disrupt the service.</p>
+</section>
+
+<section>
+<h2>Camera & Content</h2>
+<p>You grant permission to use your camera to capture coffee cup images. You are responsible for the content you upload.</p>
+</section>
+
+<section>
+<h2>Intellectual Property</h2>
+<p>All app content, including AI-generated outputs, design, and branding, belongs to ABit and may not be reused commercially.</p>
+</section>
+
+<section>
+<h2>Limitation of Liability</h2>
+<p>ABit is not responsible for any decisions or outcomes based on the app’s content. Use is at your own risk.</p>
+</section>
+
+<section>
+<h2>Changes</h2>
+<p>We may update these terms from time to time. Continued use of the app means you accept the updated terms.</p>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>support@abit.com</p>
+</section>
+`,
+
+tr: `
+<section>
+<h2>Eğlence Amaçlıdır</h2>
+<p>Faldium, yapay zeka destekli bir eğlence uygulamasıdır. Sunulan tüm yorumlar yalnızca eğlence amaçlıdır ve gerçek bir öngörü, profesyonel tavsiye veya kesin bilgi içermez.</p>
+<div class="highlight">
+Uygulamadaki içeriklere dayanarak önemli kararlar almayınız.
+</div>
+</section>
+
+<section>
+<h2>Ödemeler</h2>
+<p>Uygulamada ücretsiz ve premium içerikler sunulmaktadır.</p>
+<ul>
+<li>Ödemeler Google Play üzerinden yapılır</li>
+<li>Fiyatlar bölgeye göre değişebilir</li>
+<li>Dijital içerikler genellikle iade edilmez</li>
+</ul>
+<p>İade süreçleri Google Play politikalarına tabidir.</p>
+</section>
+
+<section>
+<h2>Kullanım</h2>
+<p>Uygulamayı kötüye kullanmamayı, sistemi bozacak davranışlarda bulunmamayı kabul edersiniz.</p>
+</section>
+
+<section>
+<h2>Kamera Kullanımı</h2>
+<p>Kahve fincanı fotoğrafları çekmek için kamera izni vermeyi kabul edersiniz. Yüklediğiniz içerikten siz sorumlusunuz.</p>
+</section>
+
+<section>
+<h2>Fikri Mülkiyet</h2>
+<p>Uygulamadaki tüm içerikler ABit’e aittir ve ticari amaçla kullanılamaz.</p>
+</section>
+
+<section>
+<h2>Sorumluluk Reddi</h2>
+<p>Uygulama içeriğine dayanarak alınan kararlardan ABit sorumlu değildir.</p>
+</section>
+
+<section>
+<h2>Değişiklikler</h2>
+<p>Bu şartlar zaman zaman güncellenebilir. Uygulamayı kullanmaya devam etmeniz yeni şartları kabul ettiğiniz anlamına gelir.</p>
+</section>
+
+<section>
+<h2>İletişim</h2>
+<p>support@abit.com</p>
+</section>
+`
+};
+
+function setLang(lang) {
+  document.getElementById("content").innerHTML = content[lang];
+}
+
+const userLang = navigator.language.startsWith('tr') ? 'tr' : 'en';
+setLang(userLang);
+
+</script>
 
 </body>
 </html>
