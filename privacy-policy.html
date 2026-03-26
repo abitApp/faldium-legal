@@ -1,240 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Faldium</title>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Faldium</title>
 
-    :root {
-      --bg: #0C082A;
-      --surface: #16123D;
-      --text: #ECECEC;
-      --muted: #9499C3;
-      --accent: #D4A373;
-      --border: #252152;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    body {
-      font-family: 'Figtree', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      padding: 0 1rem 4rem;
-    }
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    header {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 3rem 0 2rem;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 3rem;
-    }
+:root {
+  --bg: #0C082A;
+  --surface: #16123D;
+  --text: #ECECEC;
+  --muted: #9499C3;
+  --accent: #D4A373;
+  --border: #252152;
+}
 
-    .logo {
-      font-family: 'Figtree', sans-serif;
-      font-size: 1.6rem;
-      color: var(--accent);
-      letter-spacing: -0.5px;
-      margin-bottom: 1.5rem;
-    }
+body {
+  font-family: 'Figtree', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 0 1rem 4rem;
+}
 
-    h1 {
-      font-family: 'Figtree', sans-serif;
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      font-weight: 400;
-      line-height: 1.15;
-      color: var(--text);
-      margin-bottom: 0.75rem;
-    }
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
 
-    .meta {
-      font-size: 0.85rem;
-      color: var(--muted);
-      font-weight: 300;
-    }
+h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.meta { font-size: 0.85rem; color: var(--muted); }
 
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-    }
+.lang-switch {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
 
-    .intro {
-      font-size: 1.05rem;
-      color: var(--muted);
-      line-height: 1.75;
-      margin-bottom: 3rem;
-      padding-bottom: 2rem;
-      border-bottom: 1px solid var(--border);
-    }
+.lang-switch button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  margin-right: 10px;
+}
 
-    section {
-      margin-bottom: 2.5rem;
-    }
+main { max-width: 720px; margin: 0 auto; }
 
-    h2 {  
-      font-family: 'Figtree', sans-serif;  
-      font-size: 1rem;
-      font-weight: 700;  
-      color: var(--text);  
-      margin-bottom: 1rem;  
-      display: flex;  
-      align-items: center;  
-      gap: 0.75rem;
-    }
+section { margin-bottom: 2rem; }
+h2 { font-size: 1rem; margin-bottom: 0.7rem; }
+p, li { font-size: 0.95rem; line-height: 1.7; color: var(--text); opacity: 0.9; }
 
-    h2 .num {
-      font-family: 'Figtree', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 500;
-      color: var(--accent);
-      background: rgba(212, 163, 115, 0.1);
-      padding: 0.15rem 0.5rem;
-      border-radius: 20px;
-      letter-spacing: 0.05em;
-    }
+ul { margin-left: 1rem; }
 
-    p {
-      font-size: 0.95rem;
-      line-height: 1.8;
-      color: var(--text);
-      opacity: 0.9;
-      margin-bottom: 0.75rem;
-    }
+.highlight {
+  background: var(--surface);
+  padding: 1rem;
+  border-left: 3px solid var(--accent);
+  margin-top: 0.5rem;
+}
 
-    ul {
-      list-style: none;
-      margin: 0.5rem 0 0.75rem 0;
-    }
-
-    ul li {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      color: var(--text);
-      opacity: 0.9;
-      padding: 0.3rem 0 0.3rem 1.25rem;
-      position: relative;
-    }
-
-    ul li::before {
-      content: '→';
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-      font-size: 0.8rem;
-    }
-
-    .highlight-box {
-      background: var(--surface);
-      border-left: 3px solid var(--accent);
-      border-radius: 0 8px 8px 0;
-      padding: 1rem 1.25rem;
-      margin: 1rem 0;
-      font-size: 0.9rem;
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    .contact-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem 1.5rem;
-      margin-top: 1rem;
-    }
-
-    .contact-card a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .contact-card a:hover { text-decoration: underline; }
-
-    footer {
-      max-width: 720px;
-      margin: 3rem auto 0;
-      padding-top: 2rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.8rem;
-      color: var(--muted);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-  </style>
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Privacy Policy</h1>
-    <p class="meta">Last Updated: March 2026</p>
-  </header>
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last Updated: March 2026</p>
 
-  <main>
-    <p class="intro">
-      Welcome to Faldium, provided by ABit. Your privacy is paramount. This policy explains how we handle your data, specifically regarding our AI-powered coffee fortune-telling services.
-    </p>
+  <div class="lang-switch">
+    🌐 
+    <button onclick="setLang('en')">English</button> | 
+    <button onclick="setLang('tr')">Türkçe</button>
+  </div>
+</header>
 
-    <section>
-      <h2><span class="num">01</span> Information We Collect</h2>
-      <p>To provide our services, we collect:</p>
-      <ul>
-        <li><strong>Camera Access & Photos:</strong> We require camera permission to let you take photos of your coffee cup. These images are analyzed by our AI.</li>
-        <li><strong>Email Address:</strong> Used for account authentication and saving your past readings.</li>
-        <li><strong>Payment Data:</strong> Handled securely via Google Play Billing for premium readings.</li>
-      </ul>
-      <div class="highlight-box">Camera access is only used when you explicitly take a photo for a reading.</div>
-    </section>
+<main id="content"></main>
 
-    <section>
-      <h2><span class="num">02</span> AI Analysis & Usage</h2>
-      <p>We use your information to:</p>
-      <ul>
-        <li>Process your coffee cup photos using AI algorithms to generate readings.</li>
-        <li>Provide a free summary reading for every user.</li>
-        <li>Deliver a detailed 99 TL premium reading upon purchase.</li>
-      </ul>
-      <div class="highlight-box">We do not use your photos for any purpose other than generating your reading.</div>
-    </section>
+<script>
 
-    <section>
-      <h2><span class="num">03</span> Data Storage</h2>
-      <p>Your data is stored securely using industry-standard providers:</p>
-      <ul>
-        <li>Firebase/Supabase (Authentication and User Data)</li>
-        <li>Google Play Billing (Transaction records)</li>
-      </ul>
-    </section>
+const content = {
+en: `
+<p>Welcome to Faldium. Your privacy matters to us.</p>
 
-    <section>
-      <h2><span class="num">04</span> Account Deletion</h2>
-      <p>You can request account deletion at any time. Upon deletion, your email and reading history will be wiped from our databases.</p>
-      <div class="contact-card">
-        Support: <a href="mailto:support@abit.com">support@abit.com</a>
-      </div>
-    </section>
+<section>
+<h2>Information We Collect</h2>
+<ul>
+<li>Camera & photos (for coffee readings)</li>
+<li>Email (authentication & history)</li>
+<li>Payment info via Google Play Billing</li>
+</ul>
+</section>
 
-    <section>
-      <h2><span class="num">05</span> Contact</h2>
-      <div class="contact-card">
-        Developed by ABit. Inquiries: <a href="mailto:support@abit.com">support@abit.com</a>
-      </div>
-    </section>
-  </main>
+<section>
+<h2>How We Use Data</h2>
+<ul>
+<li>Generate AI-based coffee readings</li>
+<li>Provide free and premium experiences</li>
+</ul>
+<div class="highlight">
+Photos are used only for generating your reading and not for training or other purposes.
+</div>
+</section>
 
-  <footer>
-    <span>© 2026 Faldium (ABit). All rights reserved.</span>
-    <a href="terms-and-conditions.html">Terms & Conditions →</a>
-  </footer>
+<section>
+<h2>Third-Party Services</h2>
+<p>We may share data with trusted providers such as Supabase, Firebase, and AI processing services strictly to operate the app.</p>
+</section>
+
+<section>
+<h2>Data Retention</h2>
+<p>We keep your data while your account is active. You can request deletion anytime.</p>
+</section>
+
+<section>
+<h2>Security</h2>
+<p>We use industry-standard security measures to protect your data.</p>
+</section>
+
+<section>
+<h2>Children</h2>
+<p>This app is not intended for children under 13.</p>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>support@abit.com</p>
+</section>
+`,
+
+tr: `
+<p>Faldium'a hoş geldiniz. Gizliliğiniz bizim için önemlidir.</p>
+
+<section>
+<h2>Toplanan Veriler</h2>
+<ul>
+<li>Kamera ve fotoğraflar (fal analizi için)</li>
+<li>Email (hesap ve geçmiş kayıtlar)</li>
+<li>Ödeme bilgileri (Google Play üzerinden)</li>
+</ul>
+</section>
+
+<section>
+<h2>Veri Kullanımı</h2>
+<ul>
+<li>Yapay zeka ile kahve falı yorumlama</li>
+<li>Ücretsiz ve premium deneyim sağlama</li>
+</ul>
+<div class="highlight">
+Fotoğraflar yalnızca fal yorumlamak için kullanılır, başka amaçlarla kullanılmaz.
+</div>
+</section>
+
+<section>
+<h2>Üçüncü Taraf Hizmetler</h2>
+<p>Verileriniz, uygulamanın çalışması için Supabase, Firebase ve AI servis sağlayıcıları ile paylaşılabilir.</p>
+</section>
+
+<section>
+<h2>Veri Saklama</h2>
+<p>Verileriniz hesabınız aktif olduğu sürece saklanır. İstediğiniz zaman silebilirsiniz.</p>
+</section>
+
+<section>
+<h2>Güvenlik</h2>
+<p>Verilerinizi korumak için endüstri standartlarında güvenlik önlemleri uygulanır.</p>
+</section>
+
+<section>
+<h2>Çocuklar</h2>
+<p>Bu uygulama 13 yaş altı kullanıcılar için uygun değildir.</p>
+</section>
+
+<section>
+<h2>İletişim</h2>
+<p>support@abit.com</p>
+</section>
+`
+};
+
+function setLang(lang) {
+  document.getElementById("content").innerHTML = content[lang];
+}
+
+// auto detect
+const userLang = navigator.language.startsWith('tr') ? 'tr' : 'en';
+setLang(userLang);
+
+</script>
 
 </body>
 </html>
