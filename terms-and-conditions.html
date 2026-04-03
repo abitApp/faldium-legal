@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,6 +47,13 @@ h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
   color: var(--accent);
   cursor: pointer;
   margin-right: 10px;
+  opacity: 0.6;
+}
+
+.lang-switch button.active {
+  opacity: 1;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 main { max-width: 720px; margin: 0 auto; }
@@ -74,8 +81,8 @@ ul { margin-left: 1rem; }
 
   <div class="lang-switch">
     🌐 
-    <button onclick="setLang('en')">English</button> | 
-    <button onclick="setLang('tr')">Türkçe</button>
+    <button id="btn-en" onclick="setLang('en')">English</button> | 
+    <button id="btn-tr" onclick="setLang('tr')">Türkçe</button>
   </div>
 </header>
 
@@ -190,10 +197,15 @@ Uygulamadaki içeriklere dayanarak önemli kararlar almayınız.
 
 function setLang(lang) {
   document.getElementById("content").innerHTML = content[lang];
+
+  document.getElementById("btn-en").classList.remove("active");
+  document.getElementById("btn-tr").classList.remove("active");
+
+  document.getElementById("btn-" + lang).classList.add("active");
 }
 
-const userLang = navigator.language.startsWith('tr') ? 'tr' : 'en';
-setLang(userLang);
+// ✅ default Türkçe
+setLang('tr');
 
 </script>
 
