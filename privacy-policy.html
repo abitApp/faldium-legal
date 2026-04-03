@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0C082A" />
 <title>Privacy Policy — Faldium</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,11 +20,19 @@
   --border: #252152;
 }
 
+/* 🔥 white flash fix */
+html, body {
+  background: #0C082A;
+}
+
 body {
   font-family: 'Figtree', sans-serif;
-  background: var(--bg);
   color: var(--text);
   padding: 0 1rem 4rem;
+
+  /* fade */
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 header {
@@ -200,8 +209,13 @@ function setLang(lang) {
   document.getElementById("btn-" + lang).classList.add("active");
 }
 
-// ✅ default Türkçe
+// default TR
 setLang('tr');
+
+// 🔥 fade-in
+window.addEventListener("load", () => {
+  document.body.style.opacity = "1";
+});
 
 </script>
 
