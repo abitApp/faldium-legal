@@ -20,7 +20,7 @@
   --border: #252152;
 }
 
-/* 🔥 white flash fix */
+/* white flash fix */
 html, body {
   background: #0C082A;
 }
@@ -44,6 +44,7 @@ header {
 }
 
 h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.meta { font-size: 0.85rem; color: var(--muted); }
 
 .lang-switch {
   margin-top: 1rem;
@@ -70,6 +71,7 @@ main { max-width: 720px; margin: 0 auto; }
 section { margin-bottom: 2rem; }
 h2 { font-size: 1rem; margin-bottom: 0.7rem; }
 p, li { font-size: 0.95rem; line-height: 1.7; opacity: 0.9; }
+p + p { margin-top: 0.6rem; }
 
 ul { margin-left: 1rem; }
 
@@ -87,10 +89,11 @@ ul { margin-left: 1rem; }
 
 <header>
   <h1>Terms & Conditions</h1>
+  <p class="meta" id="updated"></p>
 
   <div class="lang-switch">
-    🌐 
-    <button id="btn-en" onclick="setLang('en')">English</button> | 
+    🌐
+    <button id="btn-en" onclick="setLang('en')">English</button> |
     <button id="btn-tr" onclick="setLang('tr')">Türkçe</button>
   </div>
 </header>
@@ -98,6 +101,11 @@ ul { margin-left: 1rem; }
 <main id="content"></main>
 
 <script>
+
+const updated = {
+  en: "Last Updated: November 2026",
+  tr: "Son Güncelleme: Kasım 2026"
+};
 
 const content = {
 
@@ -111,14 +119,52 @@ Do not make personal, financial, medical, or legal decisions based on the conten
 </section>
 
 <section>
+<h2>Account</h2>
+<p>You must be at least 13 years old to use the app. You are responsible for your account and for what happens under it. You can delete your account at any time in the app.</p>
+</section>
+
+<section>
+<h2>Ask for Advice (Bir Akıl Ver)</h2>
+<p>Ask for Advice lets signed-in users post a question with two or three answer options and lets other users vote. You can post up to 3 questions per day.</p>
+<ul>
+<li>Votes and results show the opinions of other app users. They are not professional advice and do not predict anything.</li>
+<li>Each user can vote once per question. A vote cannot be changed after it is cast.</li>
+<li>Your question is shown to other users with a nickname, not your real name.</li>
+<li>Questions may be checked automatically (including by AI) and manually before or after they are published. We decide whether a question is published, and we may refuse, hide or remove any question at any time, with or without notice.</li>
+</ul>
+</section>
+
+<section>
+<h2>Content Rules</h2>
+<p>There is no tolerance for objectionable content or abusive users. You agree not to post content that:</p>
+<ul>
+<li>insults, harasses, threatens or discriminates against people, or contains hate speech</li>
+<li>is sexual, violent, encourages self-harm or any illegal activity</li>
+<li>includes personal information of yourself or others (real names, phone numbers, addresses, email addresses, ID numbers)</li>
+<li>is spam, advertising, or misleading, or infringes someone else's rights</li>
+</ul>
+<p>Your nickname must also follow these rules. We may change or remove a nickname that does not.</p>
+</section>
+
+<section>
+<h2>Reporting and Blocking</h2>
+<p>You can report a question from the menu in the question screen and block its author. Blocked users' questions are hidden from you, and you can unblock them in Settings &rsaquo; Blocked Users. We review reports and may hide questions, and restrict or close accounts that break these rules.</p>
+</section>
+
+<section>
+<h2>Your Content</h2>
+<p>You keep ownership of what you write. By posting a question, you give ABit a limited, non-exclusive right to store, display and process it in the app (including running checks) for as long as it is published and as needed to run the service. You are responsible for the content you post and the photos you upload.</p>
+</section>
+
+<section>
 <h2>Payments & Purchases</h2>
 <p>We offer free and premium readings.</p>
 <ul>
-<li>Payments are processed via Google Play Billing</li>
+<li>Payments are processed via Google Play Billing or the App Store</li>
 <li>Prices may vary by region and taxes</li>
 <li>Digital purchases are generally non-refundable once delivered</li>
 </ul>
-<p>Refunds are subject to Google Play’s policies.</p>
+<p>Refunds are subject to the policies of Google Play and the App Store.</p>
 </section>
 
 <section>
@@ -127,8 +173,8 @@ Do not make personal, financial, medical, or legal decisions based on the conten
 </section>
 
 <section>
-<h2>Camera & Content</h2>
-<p>You grant permission to use your camera to capture coffee cup images. You are responsible for the content you upload.</p>
+<h2>Camera & Microphone</h2>
+<p>You grant permission to use your camera to capture coffee cup and palm images, and your microphone for voice input in Dream Interpretation. You can turn these permissions off in your device settings.</p>
 </section>
 
 <section>
@@ -138,7 +184,7 @@ Do not make personal, financial, medical, or legal decisions based on the conten
 
 <section>
 <h2>Limitation of Liability</h2>
-<p>ABit is not responsible for any decisions or outcomes based on the app’s content. Use is at your own risk.</p>
+<p>ABit is not responsible for any decisions or outcomes based on the app's content, including other users' votes and questions. Use is at your own risk.</p>
 </section>
 
 <section>
@@ -162,14 +208,52 @@ Uygulamadaki içeriklere dayanarak önemli kararlar almayınız.
 </section>
 
 <section>
+<h2>Hesap</h2>
+<p>Uygulamayı kullanmak için en az 13 yaşında olmalısınız. Hesabınızdan ve hesabınızla yapılan işlemlerden siz sorumlusunuz. Hesabınızı istediğiniz zaman uygulamadan silebilirsiniz.</p>
+</section>
+
+<section>
+<h2>Bir Akıl Ver</h2>
+<p>Bir Akıl Ver, giriş yapmış kullanıcıların iki veya üç cevap seçenekli bir soru yayınlamasını ve diğer kullanıcıların oy vermesini sağlar. Günde en fazla 3 soru sorabilirsiniz.</p>
+<ul>
+<li>Oylar ve sonuçlar, uygulamanın diğer kullanıcılarının görüşlerini gösterir. Profesyonel tavsiye değildir ve bir şeyi öngörmez.</li>
+<li>Her kullanıcı bir soruya bir kez oy verebilir. Verilen oy değiştirilemez.</li>
+<li>Sorunuz diğer kullanıcılara gerçek adınızla değil, bir takma adla gösterilir.</li>
+<li>Sorular yayınlanmadan önce veya sonra otomatik olarak (yapay zeka dahil) ve elle kontrol edilebilir. Bir sorunun yayınlanıp yayınlanmayacağına biz karar veririz; herhangi bir soruyu önceden haber vererek veya vermeden reddedebilir, gizleyebilir ya da kaldırabiliriz.</li>
+</ul>
+</section>
+
+<section>
+<h2>İçerik Kuralları</h2>
+<p>Uygunsuz içeriğe ve kötüye kullanan kullanıcılara tolerans gösterilmez. Aşağıdaki içerikleri paylaşmamayı kabul edersiniz:</p>
+<ul>
+<li>İnsanlara hakaret eden, onları taciz eden, tehdit eden veya ayrımcılık yapan içerik ya da nefret söylemi</li>
+<li>Cinsel, şiddet içeren, kendine zarar vermeyi veya yasa dışı bir faaliyeti teşvik eden içerik</li>
+<li>Kendinize veya başkalarına ait kişisel bilgiler (gerçek kişi adları, telefon, adres, e-posta, kimlik numarası)</li>
+<li>Spam, reklam veya yanıltıcı içerik; başkalarının haklarını ihlal eden içerik</li>
+</ul>
+<p>Takma adınız da bu kurallara uymalıdır. Uymayan takma adı değiştirebilir veya kaldırabiliriz.</p>
+</section>
+
+<section>
+<h2>Şikâyet ve Engelleme</h2>
+<p>Soru ekranındaki menüden bir soruyu bildirebilir ve yazarını engelleyebilirsiniz. Engellediğiniz kullanıcıların soruları sizden gizlenir; engeli Ayarlar &rsaquo; Engellenenler'den kaldırabilirsiniz. Şikâyetleri inceler, soruları gizleyebilir, bu kuralları ihlal eden hesapları kısıtlayabilir veya kapatabiliriz.</p>
+</section>
+
+<section>
+<h2>İçeriğiniz</h2>
+<p>Yazdıklarınızın sahibi sizsiniz. Bir soru yayınlayarak ABit'e, o soruyu uygulamada saklama, gösterme ve işleme (kontrol etme dahil) konusunda; yayında kaldığı sürece ve hizmeti çalıştırmak için gerektiği kadar geçerli, sınırlı ve münhasır olmayan bir hak vermiş olursunuz. Yayınladığınız içerikten ve yüklediğiniz fotoğraflardan siz sorumlusunuz.</p>
+</section>
+
+<section>
 <h2>Ödemeler</h2>
 <p>Uygulamada ücretsiz ve premium içerikler sunulmaktadır.</p>
 <ul>
-<li>Ödemeler Google Play üzerinden yapılır</li>
-<li>Fiyatlar bölgeye göre değişebilir</li>
+<li>Ödemeler Google Play veya App Store üzerinden yapılır</li>
+<li>Fiyatlar bölgeye ve vergilere göre değişebilir</li>
 <li>Dijital içerikler genellikle iade edilmez</li>
 </ul>
-<p>İade süreçleri Google Play politikalarına tabidir.</p>
+<p>İade süreçleri Google Play ve App Store politikalarına tabidir.</p>
 </section>
 
 <section>
@@ -178,18 +262,18 @@ Uygulamadaki içeriklere dayanarak önemli kararlar almayınız.
 </section>
 
 <section>
-<h2>Kamera Kullanımı</h2>
-<p>Kahve fincanı fotoğrafları çekmek için kamera izni vermeyi kabul edersiniz. Yüklediğiniz içerikten siz sorumlusunuz.</p>
+<h2>Kamera ve Mikrofon Kullanımı</h2>
+<p>Kahve fincanı ve el fotoğrafları çekmek için kamera, Rüya Tabiri'nde sesli anlatım için mikrofon izni vermeyi kabul edersiniz. Bu izinleri cihaz ayarlarından istediğiniz zaman kapatabilirsiniz.</p>
 </section>
 
 <section>
 <h2>Fikri Mülkiyet</h2>
-<p>Uygulamadaki tüm içerikler ABit’e aittir ve ticari amaçla kullanılamaz.</p>
+<p>Uygulamadaki tüm içerikler ABit'e aittir ve ticari amaçla kullanılamaz.</p>
 </section>
 
 <section>
 <h2>Sorumluluk Reddi</h2>
-<p>Uygulama içeriğine dayanarak alınan kararlardan ABit sorumlu değildir.</p>
+<p>Uygulama içeriğine, diğer kullanıcıların oyları ve soruları dahil, dayanarak alınan kararlardan ABit sorumlu değildir. Kullanım sorumluluğu size aittir.</p>
 </section>
 
 <section>
@@ -206,6 +290,7 @@ Uygulamadaki içeriklere dayanarak önemli kararlar almayınız.
 
 function setLang(lang) {
   document.getElementById("content").innerHTML = content[lang];
+  document.getElementById("updated").textContent = updated[lang];
 
   document.getElementById("btn-en").classList.remove("active");
   document.getElementById("btn-tr").classList.remove("active");
@@ -216,7 +301,7 @@ function setLang(lang) {
 // default TR
 setLang('tr');
 
-// 🔥 fade-in fix
+// fade-in fix
 window.addEventListener("load", () => {
   document.body.style.opacity = "1";
 });
