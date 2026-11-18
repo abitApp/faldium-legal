@@ -20,7 +20,7 @@
   --border: #252152;
 }
 
-/* 🔥 white flash fix */
+/* white flash fix */
 html, body {
   background: #0C082A;
 }
@@ -71,6 +71,7 @@ main { max-width: 720px; margin: 0 auto; }
 section { margin-bottom: 2rem; }
 h2 { font-size: 1rem; margin-bottom: 0.7rem; }
 p, li { font-size: 0.95rem; line-height: 1.7; color: var(--text); opacity: 0.9; }
+p + p { margin-top: 0.6rem; }
 
 ul { margin-left: 1rem; }
 
@@ -87,11 +88,11 @@ ul { margin-left: 1rem; }
 
 <header>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last Updated: March 2026</p>
+  <p class="meta" id="updated"></p>
 
   <div class="lang-switch">
-    🌐 
-    <button id="btn-en" onclick="setLang('en')">English</button> | 
+    🌐
+    <button id="btn-en" onclick="setLang('en')">English</button> |
     <button id="btn-tr" onclick="setLang('tr')">Türkçe</button>
   </div>
 </header>
@@ -100,24 +101,36 @@ ul { margin-left: 1rem; }
 
 <script>
 
+const updated = {
+  en: "Last Updated: November 2026",
+  tr: "Son Güncelleme: Kasım 2026"
+};
+
 const content = {
 en: `
-<p>Welcome to Faldium. Your privacy matters to us.</p>
+<p>Welcome to Faldium. Your privacy matters to us. This policy explains what data the app processes, why, and what choices you have.</p>
 
 <section>
 <h2>Information We Collect</h2>
 <ul>
-<li>Camera & photos (for coffee readings)</li>
-<li>Email (authentication & history)</li>
-<li>Payment info via Google Play Billing</li>
+<li><b>Account:</b> your email address (sign-in by email link, Google or Apple), and the time zone of your device.</li>
+<li><b>Profile and readings:</b> your name and date of birth when you use Numerology, Cosmic Match or your daily scores.</li>
+<li><b>Coffee and palm readings:</b> photos you take with the camera of a coffee cup or of your hands.</li>
+<li><b>Dream Interpretation:</b> the dream text you write and, if you use the microphone, your voice recording, which is converted to text.</li>
+<li><b>Ask for Advice (Bir Akıl Ver):</b> the questions and answer options you submit, your votes, your nickname, and the reports and blocks you make.</li>
+<li><b>Usage and technical data:</b> app version, device type, usage events and crash reports (Firebase Analytics, Crashlytics and Performance Monitoring).</li>
+<li><b>Purchases:</b> purchase status and subscription information. Payments are processed by Google Play or the App Store; we do not receive your card details.</li>
 </ul>
 </section>
 
 <section>
 <h2>How We Use Data</h2>
 <ul>
-<li>Generate AI-based coffee readings</li>
-<li>Provide free and premium experiences</li>
+<li>Generate AI-based coffee, palm, dream, numerology and cosmic match readings</li>
+<li>Run the Ask for Advice feature: check questions, publish them, count votes and show results</li>
+<li>Keep the community safe: automatic and manual review, handling reports and blocks</li>
+<li>Provide free and premium experiences and manage purchases</li>
+<li>Fix errors and improve the app</li>
 </ul>
 <div class="highlight">
 Photos are used only for generating your reading and not for training or other purposes.
@@ -125,13 +138,43 @@ Photos are used only for generating your reading and not for training or other p
 </section>
 
 <section>
-<h2>Third-Party Services</h2>
-<p>We may share data with trusted providers such as Supabase, Firebase, and AI processing services strictly to operate the app.</p>
+<h2>Ask for Advice: What Other Users See</h2>
+<ul>
+<li>Your questions are shown to other users together with an automatically generated <b>nickname</b>, which you can change in Profile. Your real name and email address are never shown.</li>
+<li>Other users can see how many people voted and, after they vote, the percentage for each option. They cannot see who voted for what.</li>
+<li>Do not write personal information (names of real people, phone numbers, addresses, email addresses, ID numbers) in your questions. Questions that contain such information are not published.</li>
+<li>Published questions may stay visible in the completed list after voting ends. If you delete your account, all your questions are deleted.</li>
+</ul>
 </section>
 
 <section>
-<h2>Data Retention</h2>
-<p>We keep your data while your account is active. You can request deletion anytime.</p>
+<h2>AI Processing</h2>
+<p>To produce readings and to check questions, the following may be sent to AI service providers: photos, dream text or voice, name and date of birth (for numerology), and the text of questions and answer options. This data is sent only to operate the feature you use. Please do not include sensitive personal information in the text you write.</p>
+</section>
+
+<section>
+<h2>Third-Party Services</h2>
+<p>We may share data with trusted providers strictly to operate the app:</p>
+<ul>
+<li><b>Supabase</b> (database, sign-in and file storage)</li>
+<li><b>Firebase / Google</b> (analytics, crash reports, Google sign-in)</li>
+<li><b>OpenAI</b> (AI readings, voice-to-text and question checks)</li>
+<li><b>ElevenLabs</b> (spoken readings)</li>
+<li><b>RevenueCat</b>, Google Play and the App Store (purchases)</li>
+<li><b>Resend</b> (email delivery of moderation notices to our team)</li>
+<li><b>Apple</b> (Sign in with Apple)</li>
+</ul>
+<p>Some of these providers process data outside Turkey and the European Economic Area.</p>
+</section>
+
+<section>
+<h2>Data Retention and Deletion</h2>
+<p>We keep your data while your account is active. You can delete your account in the app (Settings &rsaquo; Delete My Account). When you do, your profile, photos, readings, questions, nickname and blocks are deleted, your votes on other people's questions are kept without any link to you, and your reports are kept without any link to you. We may keep limited data when the law requires it.</p>
+</section>
+
+<section>
+<h2>Your Rights</h2>
+<p>Under applicable law, including the Turkish Personal Data Protection Law (KVKK), you may ask whether your data is processed, request a copy, ask for correction or deletion, and object to processing. To use these rights, contact us at the address below.</p>
 </section>
 
 <section>
@@ -145,28 +188,40 @@ Photos are used only for generating your reading and not for training or other p
 </section>
 
 <section>
+<h2>Changes</h2>
+<p>We may update this policy. We will change the date above when we do.</p>
+</section>
+
+<section>
 <h2>Contact</h2>
 <p>support@abit.com</p>
 </section>
 `,
 
 tr: `
-<p>Faldium'a hoş geldiniz. Gizliliğiniz bizim için önemlidir.</p>
+<p>Faldium'a hoş geldiniz. Gizliliğiniz bizim için önemlidir. Bu metin, uygulamanın hangi verileri neden işlediğini ve sizin seçeneklerinizi açıklar.</p>
 
 <section>
 <h2>Toplanan Veriler</h2>
 <ul>
-<li>Kamera ve fotoğraflar (fal analizi için)</li>
-<li>Email (hesap ve geçmiş kayıtlar)</li>
-<li>Ödeme bilgileri (Google Play üzerinden)</li>
+<li><b>Hesap:</b> e-posta adresiniz (e-posta bağlantısı, Google veya Apple ile giriş) ve cihazınızın saat dilimi.</li>
+<li><b>Profil ve yorumlar:</b> Numeroloji, Kozmik Uyum ve günlük skorlar için adınız ve doğum tarihiniz.</li>
+<li><b>Kahve ve el falı:</b> kamerayla çektiğiniz kahve fincanı ve el fotoğrafları.</li>
+<li><b>Rüya Tabiri:</b> yazdığınız rüya metni ve mikrofonu kullanırsanız yazıya çevrilen ses kaydınız.</li>
+<li><b>Bir Akıl Ver:</b> gönderdiğiniz sorular ve cevap seçenekleri, oylarınız, takma adınız, yaptığınız şikâyetler ve engellemeler.</li>
+<li><b>Kullanım ve teknik veriler:</b> uygulama sürümü, cihaz türü, kullanım olayları ve çökme raporları (Firebase Analytics, Crashlytics ve Performance Monitoring).</li>
+<li><b>Satın alma:</b> satın alma durumu ve abonelik bilgisi. Ödemeler Google Play veya App Store üzerinden alınır; kart bilgileriniz bize ulaşmaz.</li>
 </ul>
 </section>
 
 <section>
 <h2>Veri Kullanımı</h2>
 <ul>
-<li>Yapay zeka ile kahve falı yorumlama</li>
-<li>Ücretsiz ve premium deneyim sağlama</li>
+<li>Yapay zeka ile kahve, el, rüya, numeroloji ve kozmik uyum yorumları üretme</li>
+<li>Bir Akıl Ver özelliğini çalıştırma: soruları kontrol etme, yayınlama, oyları sayma ve sonuçları gösterme</li>
+<li>Topluluğu güvende tutma: otomatik ve elle inceleme, şikâyet ve engellemeleri işleme</li>
+<li>Ücretsiz ve premium deneyim sağlama, satın almaları yönetme</li>
+<li>Hataları düzeltme ve uygulamayı geliştirme</li>
 </ul>
 <div class="highlight">
 Fotoğraflar yalnızca fal yorumlamak için kullanılır, başka amaçlarla kullanılmaz.
@@ -174,13 +229,43 @@ Fotoğraflar yalnızca fal yorumlamak için kullanılır, başka amaçlarla kull
 </section>
 
 <section>
-<h2>Üçüncü Taraf Hizmetler</h2>
-<p>Verileriniz, uygulamanın çalışması için Supabase, Firebase ve AI servis sağlayıcıları ile paylaşılabilir.</p>
+<h2>Bir Akıl Ver: Diğer Kullanıcılar Ne Görür?</h2>
+<ul>
+<li>Sorularınız, otomatik oluşturulan bir <b>takma ad</b> ile diğer kullanıcılara gösterilir. Takma adınızı Profil'den değiştirebilirsiniz. Gerçek adınız ve e-posta adresiniz hiçbir yerde gösterilmez.</li>
+<li>Diğer kullanıcılar kaç kişinin oy verdiğini ve oy verdikten sonra her seçeneğin yüzdesini görür. Kimin neye oy verdiğini göremezler.</li>
+<li>Sorularınıza kişisel bilgi (gerçek kişi adları, telefon, adres, e-posta, kimlik numarası) yazmayın. Bu tür bilgi içeren sorular yayınlanmaz.</li>
+<li>Yayınlanan sorular, oylama bittikten sonra da tamamlanan sorular listesinde görünebilir. Hesabınızı silerseniz tüm sorularınız silinir.</li>
+</ul>
 </section>
 
 <section>
-<h2>Veri Saklama</h2>
-<p>Verileriniz hesabınız aktif olduğu sürece saklanır. İstediğiniz zaman silebilirsiniz.</p>
+<h2>Yapay Zeka ile İşleme</h2>
+<p>Yorumları üretmek ve soruları kontrol etmek için; fotoğraflar, rüya metni veya sesi, ad ve doğum tarihi (numeroloji için) ile soru ve cevap seçeneği metinleri yapay zeka servis sağlayıcılarına gönderilebilir. Bu veriler yalnızca kullandığınız özelliği çalıştırmak için gönderilir. Yazdığınız metinlere hassas kişisel bilgi eklememenizi rica ederiz.</p>
+</section>
+
+<section>
+<h2>Üçüncü Taraf Hizmetler</h2>
+<p>Verileriniz, uygulamanın çalışması için güvendiğimiz hizmet sağlayıcılarla paylaşılabilir:</p>
+<ul>
+<li><b>Supabase</b> (veritabanı, giriş ve dosya depolama)</li>
+<li><b>Firebase / Google</b> (analitik, çökme raporları, Google ile giriş)</li>
+<li><b>OpenAI</b> (yapay zeka yorumları, sesten yazıya çeviri ve soru kontrolü)</li>
+<li><b>ElevenLabs</b> (sesli anlatım)</li>
+<li><b>RevenueCat</b>, Google Play ve App Store (satın almalar)</li>
+<li><b>Resend</b> (ekibimize moderasyon bildirimi e-postaları)</li>
+<li><b>Apple</b> (Apple ile giriş)</li>
+</ul>
+<p>Bu sağlayıcılardan bazıları verileri Türkiye ve Avrupa Ekonomik Alanı dışında işleyebilir.</p>
+</section>
+
+<section>
+<h2>Veri Saklama ve Silme</h2>
+<p>Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı uygulamadan silebilirsiniz (Ayarlar &rsaquo; Hesabımı Sil). Sildiğinizde profiliniz, fotoğraflarınız, yorumlarınız, sorularınız, takma adınız ve engellemeleriniz silinir; başkalarının sorularına verdiğiniz oylar sizinle bağlantısı kaldırılarak, şikâyetleriniz de sizinle bağlantısı kaldırılarak saklanır. Kanunların gerektirdiği hallerde sınırlı veriler saklanabilir.</p>
+</section>
+
+<section>
+<h2>Haklarınız</h2>
+<p>Kişisel Verilerin Korunması Kanunu (KVKK) dahil geçerli mevzuat uyarınca; verilerinizin işlenip işlenmediğini öğrenme, bir kopyasını isteme, düzeltme veya silme talep etme ve işlenmesine itiraz etme haklarına sahipsiniz. Bu hakları kullanmak için aşağıdaki adresten bize ulaşabilirsiniz.</p>
 </section>
 
 <section>
@@ -194,6 +279,11 @@ Fotoğraflar yalnızca fal yorumlamak için kullanılır, başka amaçlarla kull
 </section>
 
 <section>
+<h2>Değişiklikler</h2>
+<p>Bu metin zaman zaman güncellenebilir. Güncellediğimizde yukarıdaki tarihi değiştiririz.</p>
+</section>
+
+<section>
 <h2>İletişim</h2>
 <p>support@abit.com</p>
 </section>
@@ -202,6 +292,7 @@ Fotoğraflar yalnızca fal yorumlamak için kullanılır, başka amaçlarla kull
 
 function setLang(lang) {
   document.getElementById("content").innerHTML = content[lang];
+  document.getElementById("updated").textContent = updated[lang];
 
   document.getElementById("btn-en").classList.remove("active");
   document.getElementById("btn-tr").classList.remove("active");
@@ -212,7 +303,7 @@ function setLang(lang) {
 // default TR
 setLang('tr');
 
-// 🔥 fade-in
+// fade-in
 window.addEventListener("load", () => {
   document.body.style.opacity = "1";
 });
