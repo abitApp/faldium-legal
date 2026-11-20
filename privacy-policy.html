@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#0C082A" />
-<title>Privacy Policy — Faldium</title>
+<title>Gizlilik Politikası — Faldium</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -31,8 +31,7 @@ body {
   padding: 0 1rem 4rem;
 
   /* fade */
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  opacity: 1;
 }
 
 header {
@@ -87,228 +86,202 @@ ul { margin-left: 1rem; }
 <body>
 
 <header>
-  <h1>Privacy Policy</h1>
-  <p class="meta" id="updated"></p>
-
-  <div class="lang-switch">
-    🌐
-    <button id="btn-en" onclick="setLang('en')">English</button> |
-    <button id="btn-tr" onclick="setLang('tr')">Türkçe</button>
-  </div>
+  <h1>Gizlilik Politikası</h1>
+  <p class="meta">Son Güncelleme: 20 Kasım 2026</p>
 </header>
 
-<main id="content"></main>
-
-<script>
-
-const updated = {
-  en: "Last Updated: November 2026",
-  tr: "Son Güncelleme: Kasım 2026"
-};
-
-const content = {
-en: `
-<p>Welcome to Faldium. Your privacy matters to us. This policy explains what data the app processes, why, and what choices you have.</p>
+<main>
+<section>
+<p>Faldium'a hoş geldiniz. Gizliliğiniz bizim için önemlidir. Bu metin, uygulamanın hangi kişisel verileri, neden ve hangi dayanakla işlediğini, kimlerle paylaştığını, ne kadar sakladığını ve haklarınızı açıklar.</p>
+</section>
 
 <section>
-<h2>Information We Collect</h2>
+<h2>Veri Sorumlusu ve İletişim</h2>
+<p>Faldium, bir şirket tarafından değil, gerçek kişi olarak yayınlanmaktadır; ticari unvan yoktur. Veri sorumlusu: <strong>Özgür Ablak</strong>, Marc-Chagall-Straße 114, 40477 Düsseldorf, Almanya (gerçek kişi). Gizlilik ve veri talepleri için: <strong>hello@abit.studio</strong>.</p>
+<p>Faldium Türkiye ve Avrupa'da sunulmaktadır. Veri sorumlusu Almanya'da yerleşiktir; AB/AEA'daki kullanıcılar için GDPR, Türkiye'deki kullanıcılar için KVKK uygulanır.</p>
+</section>
+
+<section>
+<h2>Topladığımız Veriler</h2>
 <ul>
-<li><b>Account:</b> your email address (sign-in by email link, Google or Apple), and the time zone of your device.</li>
-<li><b>Profile and readings:</b> your name and date of birth when you use Numerology, Cosmic Match or your daily scores.</li>
-<li><b>Coffee and palm readings:</b> photos you take with the camera of a coffee cup or of your hands.</li>
-<li><b>Dream Interpretation:</b> the dream text you write and, if you use the microphone, your voice recording, which is converted to text.</li>
-<li><b>Ask for Advice (Bir Akıl Ver):</b> the questions and answer options you submit, your votes, your nickname, and the reports and blocks you make.</li>
-<li><b>Usage and technical data:</b> app version, device type, usage events and crash reports (Firebase Analytics, Crashlytics and Performance Monitoring).</li>
-<li><b>Purchases:</b> purchase status and subscription information. Payments are processed by Google Play or the App Store; we do not receive your card details.</li>
+<li><strong>Hesap:</strong> e-posta adresiniz (e-posta ile giriş, Google veya Apple ile giriş) ve cihazınızın saat dilimi. Giriş yapmadan kullanımda cihaz kimliği.</li>
+<li><strong>Profil ve yorumlar:</strong> Numeroloji, Kozmik Uyum ve günlük skorlar için adınız, soyadınız ve doğum tarihiniz.</li>
+<li><strong>Kahve ve el falı:</strong> kamerayla çektiğiniz kahve fincanı ve el fotoğrafları.</li>
+<li><strong>Rüya Tabiri:</strong> yazdığınız rüya metni ve mikrofonu kullanırsanız sesiniz. Ses yalnızca yazıya çevrilmek için kullanılır ve saklanmaz (bkz. "Sesle Yazma").</li>
+<li><strong>Kozmik Uyum:</strong> karşılaştırmak istediğiniz kişinin adı, soyadı, doğum tarihi ve ilişki türü. Bu bilgiyi girmeden önce ilgili kişiyi bilgilendirmek sizin sorumluluğunuzdadır.</li>
+<li><strong>Anket:</strong> verdiğiniz oylar.</li>
+<li><strong>Topluluk:</strong> paylaştığınız mesajlar, (yorum özelliği açıldığında) yorumlar, beğenme/beğenmeme tepkileriniz, takma adınız, Topluluk Kurallarını kabul ettiğiniz tarih ve kural sürümü, yaptığınız şikâyetler (sebep ve isteğe bağlı not) ve engellediğiniz kullanıcılar.</li>
+<li><strong>Kozmik Kimlik avatarı:</strong> yaşam yolu sayınızla (doğum tarihinizden hesaplanır) ilişkili hayvan ve böcek figürü.</li>
+<li><strong>Kullanım ve teknik veriler:</strong> uygulama sürümü, cihaz türü, uygulamanın kendi kullanım olayları (cihaz kimliğiyle, giriş yaptıysanız hesap kimliğiyle birlikte; yazdığınız içerik bu olaylara eklenmez) ve çökme raporları (Firebase Analytics, Crashlytics, Performance Monitoring).</li>
+<li><strong>Satın alma altyapısı:</strong> uygulamada şu anda ücretli özellik sunulmuyor. Satın alma altyapımız RevenueCat, uygulamayı açtığınızda anonim bir kimlikle (SDK'nın ürettiği <code>$RCAnonymousID:</code> önekli kimlik) RevenueCat sunucusuna bağlanır; RevenueCat'in gizlilik politikasına göre cihaz türü ve işletim sistemi gibi teknik bilgiler de işlenebilir. İleride ücretli özellik eklenirse satın alma durumu işlenir; ödemeler Google Play veya App Store üzerinden alınır, kart bilgileriniz bize ulaşmaz.</li>
+<li><strong>Reklam kimliği:</strong> Faldium reklam göstermez ve Android reklam kimliğini (AD_ID) kullanmaz.</li>
 </ul>
 </section>
 
 <section>
-<h2>How We Use Data</h2>
+<h2>Verileri Hangi Dayanakla İşliyoruz</h2>
 <ul>
-<li>Generate AI-based coffee, palm, dream, numerology and cosmic match readings</li>
-<li>Run the Ask for Advice feature: check questions, publish them, count votes and show results</li>
-<li>Keep the community safe: automatic and manual review, handling reports and blocks</li>
-<li>Provide free and premium experiences and manage purchases</li>
-<li>Fix errors and improve the app</li>
-</ul>
-<div class="highlight">
-Photos are used only for generating your reading and not for training or other purposes.
-</div>
-</section>
-
-<section>
-<h2>Ask for Advice: What Other Users See</h2>
-<ul>
-<li>Your questions are shown to other users together with an automatically generated <b>nickname</b>, which you can change in Profile. Your real name and email address are never shown.</li>
-<li>Other users can see how many people voted and, after they vote, the percentage for each option. They cannot see who voted for what.</li>
-<li>Do not write personal information (names of real people, phone numbers, addresses, email addresses, ID numbers) in your questions. Questions that contain such information are not published.</li>
-<li>Published questions may stay visible in the completed list after voting ends. If you delete your account, all your questions are deleted.</li>
+<li>Hesabınızın açılması, fal yorumlarının üretilmesi, numeroloji ve rüya yorumları, Anket ve Topluluk gibi talep ettiğiniz hizmetler için gerekli kişisel veriler, sözleşmenin ifası amacıyla işlenir (GDPR m.6/1-b). KVKK kapsamında ilgili işleme şartları ayrıca dikkate alınır.</li>
+<li>Fotoğraf, ses ve rüya metinleriniz yalnızca talep ettiğiniz özelliği sunmak için işlenir. Fotoğraflar kimlik doğrulama için kullanılmaz.</li>
+<li>Bu içeriklere sağlık, inanç, cinsel yaşam gibi özel nitelikli kişisel veriler (GDPR m.9; KVKK m.6) dahil olabilir. Bu tür bilgileri paylaşmamanızı öneririz. Paylaşmanız hâlinde bunların işlenmesi için yürürlükteki mevzuatın aradığı ek şartlar, özellikle açık rıza, ayrıca aranır.</li>
+<li>Uygulama güvenliği, kötüye kullanımın önlenmesi, gerekli hata kayıtları, Topluluk güvenliği, moderasyon, uzaklaştırma ve uzaklaştırılan hesabın yeniden katılımını önleyen e-posta özeti: şartları sağlandığı ölçüde meşru menfaat (GDPR m.6/1-f; KVKK m.5/2-f).</li>
+<li>Zorunlu olmayan analitik işlemler: yürürlükteki mevzuat rıza gerektiriyorsa dayanak rızanızdır.</li>
+<li>Kamera ve mikrofon izni, cihazınızın işletim sisteminin uygulamaya erişim iznidir; hukuki rıza veya işleme dayanağı yerine geçmez. Bu izni cihaz ayarlarından istediğiniz zaman geri alabilirsiniz.</li>
+<li>Kanundan doğan yükümlülükler: hukuki yükümlülük (GDPR m.6/1-c; KVKK m.5/2-ç).</li>
 </ul>
 </section>
 
 <section>
-<h2>AI Processing</h2>
-<p>To produce readings and to check questions, the following may be sent to AI service providers: photos, dream text or voice, name and date of birth (for numerology), and the text of questions and answer options. This data is sent only to operate the feature you use. Please do not include sensitive personal information in the text you write.</p>
-</section>
-
-<section>
-<h2>Third-Party Services</h2>
-<p>We may share data with trusted providers strictly to operate the app:</p>
+<h2>Verileri Nasıl Kullanıyoruz</h2>
 <ul>
-<li><b>Supabase</b> (database, sign-in and file storage)</li>
-<li><b>Firebase / Google</b> (analytics, crash reports, Google sign-in)</li>
-<li><b>OpenAI</b> (AI readings, voice-to-text and question checks)</li>
-<li><b>ElevenLabs</b> (spoken readings)</li>
-<li><b>RevenueCat</b>, Google Play and the App Store (purchases)</li>
-<li><b>Resend</b> (email delivery of moderation notices to our team)</li>
-<li><b>Apple</b> (Sign in with Apple)</li>
-</ul>
-<p>Some of these providers process data outside Turkey and the European Economic Area.</p>
-</section>
-
-<section>
-<h2>Data Retention and Deletion</h2>
-<p>We keep your data while your account is active. You can delete your account in the app (Settings &rsaquo; Delete My Account). When you do, your profile, photos, readings, questions, nickname and blocks are deleted, your votes on other people's questions are kept without any link to you, and your reports are kept without any link to you. We may keep limited data when the law requires it.</p>
-</section>
-
-<section>
-<h2>Your Rights</h2>
-<p>Under applicable law, including the Turkish Personal Data Protection Law (KVKK), you may ask whether your data is processed, request a copy, ask for correction or deletion, and object to processing. To use these rights, contact us at the address below.</p>
-</section>
-
-<section>
-<h2>Security</h2>
-<p>We use industry-standard security measures to protect your data.</p>
-</section>
-
-<section>
-<h2>Children</h2>
-<p>This app is not intended for children under 13.</p>
-</section>
-
-<section>
-<h2>Changes</h2>
-<p>We may update this policy. We will change the date above when we do.</p>
-</section>
-
-<section>
-<h2>Contact</h2>
-<p>hello@abit.studio</p>
-</section>
-`,
-
-tr: `
-<p>Faldium'a hoş geldiniz. Gizliliğiniz bizim için önemlidir. Bu metin, uygulamanın hangi verileri neden işlediğini ve sizin seçeneklerinizi açıklar.</p>
-
-<section>
-<h2>Toplanan Veriler</h2>
-<ul>
-<li><b>Hesap:</b> e-posta adresiniz (e-posta bağlantısı, Google veya Apple ile giriş) ve cihazınızın saat dilimi.</li>
-<li><b>Profil ve yorumlar:</b> Numeroloji, Kozmik Uyum ve günlük skorlar için adınız ve doğum tarihiniz.</li>
-<li><b>Kahve ve el falı:</b> kamerayla çektiğiniz kahve fincanı ve el fotoğrafları.</li>
-<li><b>Rüya Tabiri:</b> yazdığınız rüya metni ve mikrofonu kullanırsanız yazıya çevrilen ses kaydınız.</li>
-<li><b>Bir Akıl Ver:</b> gönderdiğiniz sorular ve cevap seçenekleri, oylarınız, takma adınız, yaptığınız şikâyetler ve engellemeler.</li>
-<li><b>Kullanım ve teknik veriler:</b> uygulama sürümü, cihaz türü, kullanım olayları ve çökme raporları (Firebase Analytics, Crashlytics ve Performance Monitoring).</li>
-<li><b>Satın alma:</b> satın alma durumu ve abonelik bilgisi. Ödemeler Google Play veya App Store üzerinden alınır; kart bilgileriniz bize ulaşmaz.</li>
-</ul>
-</section>
-
-<section>
-<h2>Veri Kullanımı</h2>
-<ul>
-<li>Yapay zeka ile kahve, el, rüya, numeroloji ve kozmik uyum yorumları üretme</li>
-<li>Bir Akıl Ver özelliğini çalıştırma: soruları kontrol etme, yayınlama, oyları sayma ve sonuçları gösterme</li>
-<li>Topluluğu güvende tutma: otomatik ve elle inceleme, şikâyet ve engellemeleri işleme</li>
-<li>Ücretsiz ve premium deneyim sağlama, satın almaları yönetme</li>
+<li>Yapay zekâ ile kahve, el, rüya, numeroloji ve kozmik uyum yorumları üretme</li>
+<li>Anket ve Topluluk'u çalıştırma: oyları sayma ve sonuçları gösterme; mesajları (ve yorumları) kontrol etme, yayınlama ve gösterme</li>
+<li>Topluluğu güvende tutma: otomatik ve elle inceleme, şikâyet, engelleme ve uzaklaştırma</li>
 <li>Hataları düzeltme ve uygulamayı geliştirme</li>
+<li>Fotoğraflar yalnızca fal yorumlamak için kullanılır; başka amaçla veya model eğitimi için kullanılmaz.</li>
 </ul>
-<div class="highlight">
-Fotoğraflar yalnızca fal yorumlamak için kullanılır, başka amaçlarla kullanılmaz.
-</div>
 </section>
 
 <section>
-<h2>Bir Akıl Ver: Diğer Kullanıcılar Ne Görür?</h2>
+<h2>Anket: Diğer Kullanıcılar Ne Görür?</h2>
 <ul>
-<li>Sorularınız, otomatik oluşturulan bir <b>takma ad</b> ile diğer kullanıcılara gösterilir. Takma adınızı Profil'den değiştirebilirsiniz. Gerçek adınız ve e-posta adresiniz hiçbir yerde gösterilmez.</li>
-<li>Diğer kullanıcılar kaç kişinin oy verdiğini ve oy verdikten sonra her seçeneğin yüzdesini görür. Kimin neye oy verdiğini göremezler.</li>
-<li>Sorularınıza kişisel bilgi (gerçek kişi adları, telefon, adres, e-posta, kimlik numarası) yazmayın. Bu tür bilgi içeren sorular yayınlanmaz.</li>
-<li>Yayınlanan sorular, oylama bittikten sonra da tamamlanan sorular listesinde görünebilir. Hesabınızı silerseniz tüm sorularınız silinir.</li>
+<li>Anketleri Faldium ekibi oluşturur.</li>
+<li>Bir ankete bir kez oy verebilirsiniz. Diğer kullanıcılar toplam oy sayısını ve oy verdikten sonra seçeneklerin yüzdesini görür. Kimin neye oy verdiğini kimse göremez.</li>
 </ul>
 </section>
 
 <section>
-<h2>Yapay Zeka ile İşleme</h2>
-<p>Yorumları üretmek ve soruları kontrol etmek için; fotoğraflar, rüya metni veya sesi, ad ve doğum tarihi (numeroloji için) ile soru ve cevap seçeneği metinleri yapay zeka servis sağlayıcılarına gönderilebilir. Bu veriler yalnızca kullandığınız özelliği çalıştırmak için gönderilir. Yazdığınız metinlere hassas kişisel bilgi eklememenizi rica ederiz.</p>
+<h2>Topluluk: Diğer Kullanıcılar Ne Görür?</h2>
+<ul>
+<li>Onaylanıp yayınlanan mesajlarınız, takma adınız ve Kozmik Kimlik avatarınızla birlikte uygulamayı kullanan herkese gösterilir; giriş yapmadan uygulamayı kullananlar dahil. Gerçek adınız ve e-posta adresiniz gösterilmez. Takma adınızı Profil'den değiştirebilirsiniz.</li>
+<li>Mesajlar yayınlandıktan sonra 30 gün görünür. Süre dolunca mesaj (ve varsa yorumları) Topluluk'ta gösterilmez, ancak hesabınız silinene kadar sistemimizde saklanır.</li>
+<li>Yorum özelliği açıldığında: bir yorumunuzu sildiğinizde metni silinir ve yerinde "Bu yorum silindi" görünür. Altında başka kullanıcıların cevapları olan bir yorumda yalnızca bu ibare kalır, böylece cevaplar korunur.</li>
+<li>Mesajlarınızla birlikte Kozmik Kimlik avatarınız gösterilir. Doğum tarihiniz veya yaşam yolu sayınız gösterilmez.</li>
+<li>Beğenme ve beğenmeme sayıları herkese görünür; kimin tepki verdiği gösterilmez.</li>
+<li>Şikâyetleriniz ve engellemeleriniz diğer kullanıcılara gösterilmez. Engellediğiniz kullanıcıların içerikleri size gösterilmez.</li>
+<li>Mesajlarınıza kişisel bilgi (gerçek kişi adları, telefon, adres, e-posta, kimlik numarası, sosyal medya hesabı) yazmayın. Bu tür bilgi içeren içerikler yayınlanmaz.</li>
+</ul>
+</section>
+
+<section>
+<h2>Topluluk Güvenliği ve Moderasyon</h2>
+<ul>
+<li>Mesaj göndermeden önce Topluluk Kurallarını kabul etmeniz istenir. Kabul ettiğiniz sürüm ve tarih saklanır; kurallar önemli ölçüde değişirse yeniden kabul istenebilir.</li>
+<li>Her mesaj önce otomatik kontrol edilir: e-posta, telefon numarası ve bağlantı içerenler kural tabanlı olarak, diğerleri yapay zekâ ile (OpenAI). Açıkça kurallara aykırı metin kaydedilmez ve yayınlanmaz; yalnızca reddedilen bir deneme olduğu ve ihlal türü (ör. hakaret) metin olmadan kaydedilir.</li>
+<li>Mesajlar ayrıca bir yöneticinin onayından sonra yayınlanır. Yorumlar açıldığında kontrolden geçen yorumlar hemen yayınlanır, şüpheli bulunanlar yönetici incelemesine alınır.</li>
+<li>Kontrol tamamlanamazsa (ör. hizmet kesintisi) içerik kontrolsüz yayınlanmaz.</li>
+<li>Bir içerik üç farklı kullanıcı tarafından şikâyet edilirse yapay zekâ yeniden değerlendirir; riskli bulunursa içerik yönetici kararına kadar gizlenir.</li>
+<li>Onay bekleyen yeni mesajlar ile şikâyet edilen veya şüpheli bulunan içerikler için moderasyon adresimize e-posta bildirimi gönderilir (Resend). Bu e-postalarda içerik metni, yazarın takma adı, yorumlarda yanıtlanan mesajın ilk 140 karakteri, şikâyet sayısı ve sebepleri, şikâyet notları, yapay zekâ değerlendirme kategorisi ve içeriği uygulamada açan bağlantı yer alır. E-posta adresiniz, gerçek adınız ve hesap kimliğiniz eklenmez. Resend, e-postaları ve kayıtlarını kendi saklama politikasına göre tutar; e-postalar ayrıca ekibimizin posta kutusunda biz silene kadar kalabilir.</li>
+<li>Kurallara uymayan hesaplar yalnızca Topluluk'tan uzaklaştırılabilir; uygulamanın diğer özellikleri kullanılmaya devam eder.</li>
+<li>Uzaklaştırma kaydı (hesap, gerekçe, tarih, kaldırılma tarihi) uzaklaştırmayı uygulamak ve itirazları değerlendirmek için saklanır; hesabınız silindiğinde bu kayıt da silinir.</li>
+<li>Uzaklaştırılan hesabın aynı e-postayla yeniden katılımını önlemek için e-posta adresinin geri döndürülemeyen, gizli anahtarlı özeti (HMAC-SHA256) saklanır. E-posta adresi bu amaçla saklanmaz ve özetten elde edilemez. Özet, hesap silinse de uzaklaştırma kaldırılana kadar saklanır; kaldırılınca silinir. İtirazı kabul edilen kullanıcının uzaklaştırması hesap silinmiş olsa bile e-posta adresiyle kaldırılabilir. Dayanak: topluluk güvenliğine yönelik meşru menfaat.</li>
+<li>Uzaklaştırmaya itiraz ve yapay zekâ ön kontrolüyle yayınlanmayan mesajın insan tarafından yeniden incelenmesi için: hello@abit.studio.</li>
+</ul>
+</section>
+
+<section>
+<h2>Sesle Yazma</h2>
+<ul>
+<li>Rüya Tabiri ve Topluluk'ta mikrofon düğmesine bastığınızda sesiniz cihazınızda en fazla 45 saniyelik geçici bir dosyaya kaydedilir.</li>
+<li>Kayıt, yalnızca OpenAI'a iletilmek üzere sunucumuzdan (Supabase) geçer; sunucumuzda, veritabanımızda veya dosya depolamamızda saklanmaz. Cihazdaki geçici dosya, yanıt alınınca veya kaydı iptal edince silinir.</li>
+<li>OpenAI kaydı yalnızca yazıya çevirmek için işler. OpenAI'ın standart API politikasına göre (developers.openai.com, "Your data" sayfası) konuşmayı yazıya çevirme hizmeti için kötüye kullanım izleme kaydı tutulmaz ve API verileri varsayılan olarak model eğitiminde kullanılmaz. Hesabımızda sıfır veri saklama (ZDR) veya benzeri özel bir sözleşme bulunduğunu varsaymıyoruz; standart politika geçerlidir.</li>
+<li>Yazıya çevrilen metin yalnızca yazı alanına eklenir; siz göndermeden paylaşılmaz.</li>
+<li>Kötüye kullanımı önlemek için sesle yazma kullanımının zamanı ve sonucu (ör. başarılı, ses algılanamadı) içerik olmadan, hesabınızla ilişkili kaydedilir.</li>
+</ul>
+</section>
+
+<section>
+<h2>Yapay Zekâ ile İşleme</h2>
+<p>Yorumları üretmek ve içerikleri kontrol etmek için aşağıdaki veriler yapay zekâ sağlayıcımız OpenAI'a gönderilir; yalnızca kullandığınız özelliği çalıştırmak için:</p>
+<ul>
+<li>Kahve ve el falı: çektiğiniz fotoğraflar;</li>
+<li>Rüya Tabiri: rüya metniniz ve varsa son 7 gün içindeki kahve falı yorumunuzun metni ile numeroloji yorumunuzun özeti (kişiselleştirme için);</li>
+<li>Numeroloji: adınız, soyadınız, doğum tarihiniz;</li>
+<li>Kozmik Uyum: sizin adınız ve karşılaştırdığınız kişinin adı ile ikinizin doğum tarihinden hesaplanan yaşam yolu sayıları (doğum tarihleri gönderilmez);</li>
+<li>Sesle yazma: ses kaydınız;</li>
+<li>Topluluk: mesaj (ve yorum) metni; çok şikâyet alan içerik, yanıtlanan metnin ilk 300 karakteriyle yeniden değerlendirmeye gönderilir.</li>
+</ul>
+<p>E-posta adresiniz, takma adınız ve hesap kimliğiniz sesle yazma ve Topluluk kontrolü isteklerine eklenmez.</p>
+<p>OpenAI'ın standart API politikasına göre sohbet hizmetine (yorumlar, Topluluk kontrolü) gönderilen veriler kötüye kullanımı izlemek için en fazla 30 gün saklanabilir; konuşmayı yazıya çevirme hizmetinde böyle bir saklama belirtilmemiştir; API verileri varsayılan olarak model eğitiminde kullanılmaz. Fotoğraflar, çocuk istismarı içeriği taramasından geçer; sistem potansiyel bir ihlal tespit ederse o görsel, diğer ayarlardan bağımsız olarak, elle inceleme için saklanır. Yasal zorunlulukta süre uzayabilir. Hesabımızda sıfır veri saklama (ZDR) bulunduğunu varsaymıyoruz. Bu bilgiler OpenAI'ın genel politikasına dayanır ve değişebilir. Yazdığınız metinlere hassas kişisel bilgi eklememenizi rica ederiz.</p>
+<p>Sesli anlatım için yorum metni ElevenLabs'e gönderilir. ElevenLabs'in hizmet koşullarına göre, kurumsal olmayan hesaplarda girdi ve çıktılar varsayılan olarak model geliştirmede kullanılabilir, hesap ayarından kapatılabilir. Sunucumuz ElevenLabs'e yalnızca seslendirilecek yorum metnini gönderir; hesap kimliğiniz, e-postanız veya takma adınız gönderilmez.</p>
 </section>
 
 <section>
 <h2>Üçüncü Taraf Hizmetler</h2>
-<p>Verileriniz, uygulamanın çalışması için güvendiğimiz hizmet sağlayıcılarla paylaşılabilir:</p>
+<p>Verileriniz, yalnızca uygulamayı çalıştırmak için şu sağlayıcılarla paylaşılabilir:</p>
 <ul>
-<li><b>Supabase</b> (veritabanı, giriş ve dosya depolama)</li>
-<li><b>Firebase / Google</b> (analitik, çökme raporları, Google ile giriş)</li>
-<li><b>OpenAI</b> (yapay zeka yorumları, sesten yazıya çeviri ve soru kontrolü)</li>
-<li><b>ElevenLabs</b> (sesli anlatım)</li>
-<li><b>RevenueCat</b>, Google Play ve App Store (satın almalar)</li>
-<li><b>Resend</b> (ekibimize moderasyon bildirimi e-postaları)</li>
-<li><b>Apple</b> (Apple ile giriş)</li>
+<li>Supabase (veritabanı, giriş ve dosya depolama)</li>
+<li>Firebase / Google (analitik, çökme raporları, performans izleme, Google ile giriş)</li>
+<li>OpenAI (yapay zekâ yorumları, sesten yazıya çeviri, Topluluk içerik kontrolü)</li>
+<li>ElevenLabs (sesli anlatım)</li>
+<li>RevenueCat, Google Play ve App Store (satın alma altyapısı)</li>
+<li>Resend (ekibimize moderasyon ve şikâyet bildirimi e-postaları)</li>
+<li>Apple (Apple ile giriş)</li>
 </ul>
-<p>Bu sağlayıcılardan bazıları verileri Türkiye ve Avrupa Ekonomik Alanı dışında işleyebilir.</p>
+</section>
+
+<section>
+<h2>Yurt Dışına Aktarım</h2>
+<p>Veritabanımız ve dosya depolamamız (Supabase) Avrupa'da (İrlanda) bulunur. Supabase, hizmet koşullarına göre verileri sağlayıcılarının tesislerinin bulunduğu başka yerlerde de işleyebilir (destek erişimi dahil). OpenAI, ElevenLabs, Firebase / Google, RevenueCat ve Resend verileri Türkiye ve Avrupa Ekonomik Alanı dışında, ABD dahil, işleyebilir.</p>
+<p><strong>AB/AEA'daki kullanıcılar (GDPR).</strong> Sağlayıcıların yayımlanmış veri işleme sözleşmelerine göre aktarım güvenceleri şöyledir:</p>
+<ul>
+<li><strong>Supabase:</strong> AB standart sözleşme maddeleri (2021/914, Modül 2 ve 3), Birleşik Krallık eki ve İsviçre eki; veri işleme sözleşmesi hizmet koşullarının parçasıdır. AB-ABD Veri Gizliliği Çerçevesi sözleşme metninde geçmiyor.</li>
+<li><strong>Firebase / Google:</strong> AB-ABD Veri Gizliliği Çerçevesi ve yedek olarak standart sözleşme maddeleri.</li>
+<li><strong>ElevenLabs:</strong> AB standart sözleşme maddeleri, Birleşik Krallık eki ve (yalnızca ABD tüzel kişisi için) Veri Gizliliği Çerçevesi. Sözleşme, ilgili hizmet sözleşmesine dahil olduğunda geçerli olur.</li>
+<li><strong>Resend:</strong> AB standart sözleşme maddeleri, Birleşik Krallık eki ve Veri Gizliliği Çerçevesi; sözleşme kabul edilen hizmet koşullarıyla bağlayıcı olur.</li>
+<li><strong>RevenueCat:</strong> AB standart sözleşme maddeleri ve Birleşik Krallık eki; veriler ABD'de (AWS) saklanır.</li>
+<li><strong>OpenAI:</strong> OpenAI'ın yayımladığı 1 Ocak 2026 tarihli veri işleme ekinde (DPA) AB standart sözleşme maddeleri düzenlenmiştir. Bu güvence, söz konusu ekin Faldium'un OpenAI hesabı için geçerli olduğu ölçüde uygulanır.</li>
+</ul>
+<p>Bu bilgiler sağlayıcıların yayımladığı belgelere dayanır; hesabımıza özgü bir sözleşme yapıldığı anlamına gelmez.</p>
+<p><strong>Türkiye'deki kullanıcılar (KVKK m.9).</strong> Türkiye'deki kullanıcıların kişisel verileri yukarıdaki sağlayıcılar aracılığıyla yurt dışına aktarılabilir. KVKK m.9 uyarınca yurt dışına aktarım ancak yeterlilik kararı, uygun güvenceler (ör. Kişisel Verileri Koruma Kurumu'na bildirilen standart sözleşme, bağlayıcı şirket kuralları) veya kanunda sayılan istisnai hâller (ör. açık rıza) kapsamında yapılabilir. Sağlayıcıların AB standart sözleşme maddeleri, KVKK'nın öngördüğü standart sözleşmenin yerine geçmez. Aktarımın hangi şarta dayandığına ilişkin bilgi için hello@abit.studio adresine yazabilirsiniz.</p>
 </section>
 
 <section>
 <h2>Veri Saklama ve Silme</h2>
-<p>Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı uygulamadan silebilirsiniz (Ayarlar &rsaquo; Hesabımı Sil). Sildiğinizde profiliniz, fotoğraflarınız, yorumlarınız, sorularınız, takma adınız ve engellemeleriniz silinir; başkalarının sorularına verdiğiniz oylar sizinle bağlantısı kaldırılarak, şikâyetleriniz de sizinle bağlantısı kaldırılarak saklanır. Kanunların gerektirdiği hallerde sınırlı veriler saklanabilir.</p>
+<p>Verileriniz hesabınız aktif olduğu sürece saklanır. Topluluk mesajları 30 günlük yayın süresi dolduktan sonra gösterilmez ama hesabınız silinene kadar saklanır. Hesabınızı uygulamadan silebilirsiniz (Ayarlar › Hesabımı Sil); silme isteğiniz hemen işlenir. Sildiğinizde:</p>
+<ul>
+<li>profiliniz, kahve ve el falı fotoğraflarınız ve yorumlarınız, numeroloji ve Kozmik Uyum kayıtlarınız (girdiğiniz kişilerin bilgileri dahil), takma adınız, Kozmik Kimlik avatarınız, engellemeleriniz, Topluluk mesajlarınız, tepkileriniz ve kural kabul kayıtlarınız silinir;</li>
+<li>Topluluk yorumlarınız silinir; altında başka kullanıcıların cevapları olan bir yorumun metni ve sizinle bağlantısı silinir, yerinde yalnızca "Bu yorum silindi" kalır;</li>
+<li>hesabınızla bağlantılı kullanım olaylarınız ve sesle yazma kayıtlarınız silinir; oturum açmadan oluşan, hesabınızla ilişkisiz kullanım olayları silinmeyebilir;</li>
+<li><strong>Anket oylarınız ve şikâyetleriniz silinmez; sizinle bağlantısı kaldırılarak kimliksiz kayıt olarak kalır.</strong> (Anket toplamları bozulmasın diye.)</li>
+<li>Topluluk'tan uzaklaştırılmış hesabın uzaklaştırma kaydı silinir; yeniden katılımı önleyen e-posta özeti uzaklaştırma kaldırılana kadar saklanır.</li>
+</ul>
+<p>Firebase / Google tarafındaki veriler sağlayıcının kendi saklama süresine tabidir: Crashlytics çökme verileri Firebase'in yayımladığı bilgiye göre 90 gün saklanır; Firebase kurulum kimliğinin silinmesi Analytics verisini silmez. RevenueCat tarafında saklanan anonim abonelik kaydı, hesabınızı silmenizle otomatik silinmez; silme talebinizi hello@abit.studio adresine iletebilirsiniz.</p>
+<p>Kanunların gerektirdiği hallerde sınırlı veriler saklanabilir.</p>
 </section>
 
 <section>
 <h2>Haklarınız</h2>
-<p>Kişisel Verilerin Korunması Kanunu (KVKK) dahil geçerli mevzuat uyarınca; verilerinizin işlenip işlenmediğini öğrenme, bir kopyasını isteme, düzeltme veya silme talep etme ve işlenmesine itiraz etme haklarına sahipsiniz. Bu hakları kullanmak için aşağıdaki adresten bize ulaşabilirsiniz.</p>
+<p>KVKK m.11 uyarınca ve AB/AEA'daysanız GDPR uyarınca şu haklara sahipsiniz: verilerinizin işlenip işlenmediğini öğrenme, bilgi ve kopya isteme, düzeltme, silme, işlemeyi kısıtlama, işlemeye itiraz, verilerinizi taşıma (GDPR) ve rızaya dayanan işlemlerde rızanızı geri çekme (geri çekmeden önceki işlemler geçerliliğini korur).</p>
+<ul>
+<li>Hesabınızı ve verilerinizi uygulamadan silebilirsiniz. Diğer talepler için hello@abit.studio adresine yazın; talebinizi en geç 30 gün içinde yanıtlarız.</li>
+<li>Yapay zekâ ön kontrolüyle yayınlanmayan bir mesaja itiraz edip insan incelemesi isteyebilirsiniz.</li>
+<li>Yanıtımızdan memnun kalmazsanız Kişisel Verileri Koruma Kurulu'na veya AB/AEA'da yaşadığınız ülkenin veri koruma otoritesine şikâyet edebilirsiniz.</li>
+</ul>
 </section>
 
 <section>
 <h2>Güvenlik</h2>
-<p>Verilerinizi korumak için endüstri standartlarında güvenlik önlemleri uygulanır.</p>
+<p>Veriler aktarım sırasında şifrelenir (HTTPS). Erişim yetkileri veritabanı düzeyinde sınırlandırılır.</p>
+<p>Fotoğraflar: Kahve falı fotoğraflarınız Supabase dosya depolamasında, hesap kimliğinize ve kayda özgü uzun bir dosya yoluyla saklanır. Bu depolama alanı herkese açık (public) olarak yapılandırılmıştır; yani bir fotoğrafın tam bağlantısını bilen herkes, giriş yapmadan fotoğrafı görüntüleyebilir. Dosya listesine ve yüklemeye herkesin erişimi kapalıdır; bağlantı uygulamada yalnızca hesabınıza bağlı kayıtta tutulur. Ancak dosyanın kendisi ayrıca bir kimlik doğrulamasıyla korunmaz. Fotoğraflarınızı hesabınızı sildiğinizde sileriz. Bu yapıyı değiştirirsek bu metni güncelleriz.</p>
+<p>Hiçbir sistem tamamen risksiz değildir; bir ihlal olursa mevzuatın gerektirdiği bildirimleri yaparız.</p>
 </section>
 
 <section>
 <h2>Çocuklar</h2>
-<p>Bu uygulama 13 yaş altı kullanıcılar için uygun değildir.</p>
+<p>Faldium'u kullanmak için en az 16 yaşında olmanız gerekir; 16 yaşın altındaki kişiler için tasarlanmamıştır ve bu kişilerden bilerek kişisel veri toplamayız.</p>
 </section>
 
 <section>
 <h2>Değişiklikler</h2>
-<p>Bu metin zaman zaman güncellenebilir. Güncellediğimizde yukarıdaki tarihi değiştiririz.</p>
+<p>Bu metin zaman zaman güncellenebilir. Önemli değişiklikleri uygulama içinde duyururuz ve yukarıdaki tarihi güncelleriz.</p>
 </section>
 
 <section>
 <h2>İletişim</h2>
 <p>hello@abit.studio</p>
 </section>
-`
-};
-
-function setLang(lang) {
-  document.getElementById("content").innerHTML = content[lang];
-  document.getElementById("updated").textContent = updated[lang];
-
-  document.getElementById("btn-en").classList.remove("active");
-  document.getElementById("btn-tr").classList.remove("active");
-
-  document.getElementById("btn-" + lang).classList.add("active");
-}
-
-// default TR
-setLang('tr');
-
-// fade-in
-window.addEventListener("load", () => {
-  document.body.style.opacity = "1";
-});
-
-</script>
+</main>
 
 </body>
 </html>

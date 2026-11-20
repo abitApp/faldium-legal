@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#0C082A" />
-<title>Terms & Conditions — Faldium</title>
+<title>Şartlar ve Koşullar — Faldium</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
@@ -31,8 +31,7 @@ body {
   padding: 0 1rem 4rem;
 
   /* fade trick */
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  opacity: 1;
 }
 
 header {
@@ -88,225 +87,122 @@ ul { margin-left: 1rem; }
 <body>
 
 <header>
-  <h1>Terms & Conditions</h1>
-  <p class="meta" id="updated"></p>
-
-  <div class="lang-switch">
-    🌐
-    <button id="btn-en" onclick="setLang('en')">English</button> |
-    <button id="btn-tr" onclick="setLang('tr')">Türkçe</button>
-  </div>
+  <h1>Şartlar ve Koşullar</h1>
+  <p class="meta">Son Güncelleme: 20 Kasım 2026</p>
 </header>
 
-<main id="content"></main>
-
-<script>
-
-const updated = {
-  en: "Last Updated: November 2026",
-  tr: "Son Güncelleme: Kasım 2026"
-};
-
-const content = {
-
-en: `
+<main>
 <section>
-<h2>Entertainment Only</h2>
-<p>Faldium is an AI-powered entertainment application. All readings are generated for entertainment purposes only and do not constitute real predictions, professional advice, or factual information.</p>
-<div class="highlight">
-Do not make personal, financial, medical, or legal decisions based on the content.
-</div>
+<h2>Hizmeti Sunan</h2>
+<p>Faldium, bir şirket tarafından değil, gerçek kişi olarak yayınlanmaktadır; ticari unvan yoktur. Hizmeti sunan: <strong>Özgür Ablak</strong>, Marc-Chagall-Straße 114, 40477 Düsseldorf, Almanya. İletişim: hello@abit.studio.</p>
 </section>
 
-<section>
-<h2>Account</h2>
-<p>You must be at least 13 years old to use the app. You are responsible for your account and for what happens under it. You can delete your account at any time in the app.</p>
-</section>
-
-<section>
-<h2>Ask for Advice (Bir Akıl Ver)</h2>
-<p>Ask for Advice lets signed-in users post a question with two or three answer options and lets other users vote. You can post up to 3 questions per day.</p>
-<ul>
-<li>Votes and results show the opinions of other app users. They are not professional advice and do not predict anything.</li>
-<li>Each user can vote once per question. A vote cannot be changed after it is cast.</li>
-<li>Your question is shown to other users with a nickname, not your real name.</li>
-<li>Questions may be checked automatically (including by AI) and manually before or after they are published. We decide whether a question is published, and we may refuse, hide or remove any question at any time, with or without notice.</li>
-</ul>
-</section>
-
-<section>
-<h2>Content Rules</h2>
-<p>There is no tolerance for objectionable content or abusive users. You agree not to post content that:</p>
-<ul>
-<li>insults, harasses, threatens or discriminates against people, or contains hate speech</li>
-<li>is sexual, violent, encourages self-harm or any illegal activity</li>
-<li>includes personal information of yourself or others (real names, phone numbers, addresses, email addresses, ID numbers)</li>
-<li>is spam, advertising, or misleading, or infringes someone else's rights</li>
-</ul>
-<p>Your nickname must also follow these rules. We may change or remove a nickname that does not.</p>
-</section>
-
-<section>
-<h2>Reporting and Blocking</h2>
-<p>You can report a question from the menu in the question screen and block its author. Blocked users' questions are hidden from you, and you can unblock them in Settings &rsaquo; Blocked Users. We review reports and may hide questions, and restrict or close accounts that break these rules.</p>
-</section>
-
-<section>
-<h2>Your Content</h2>
-<p>You keep ownership of what you write. By posting a question, you give ABit a limited, non-exclusive right to store, display and process it in the app (including running checks) for as long as it is published and as needed to run the service. You are responsible for the content you post and the photos you upload.</p>
-</section>
-
-<section>
-<h2>Payments & Purchases</h2>
-<p>We offer free and premium readings.</p>
-<ul>
-<li>Payments are processed via Google Play Billing or the App Store</li>
-<li>Prices may vary by region and taxes</li>
-<li>Digital purchases are generally non-refundable once delivered</li>
-</ul>
-<p>Refunds are subject to the policies of Google Play and the App Store.</p>
-</section>
-
-<section>
-<h2>Use of Service</h2>
-<p>You agree to use the app responsibly and not misuse, exploit, or attempt to disrupt the service.</p>
-</section>
-
-<section>
-<h2>Camera & Microphone</h2>
-<p>You grant permission to use your camera to capture coffee cup and palm images, and your microphone for voice input in Dream Interpretation. You can turn these permissions off in your device settings.</p>
-</section>
-
-<section>
-<h2>Intellectual Property</h2>
-<p>All app content, including AI-generated outputs, design, and branding, belongs to ABit and may not be reused commercially.</p>
-</section>
-
-<section>
-<h2>Limitation of Liability</h2>
-<p>ABit is not responsible for any decisions or outcomes based on the app's content, including other users' votes and questions. Use is at your own risk.</p>
-</section>
-
-<section>
-<h2>Changes</h2>
-<p>We may update these terms from time to time. Continued use of the app means you accept the updated terms.</p>
-</section>
-
-<section>
-<h2>Contact</h2>
-<p>hello@abit.studio</p>
-</section>
-`,
-
-tr: `
 <section>
 <h2>Eğlence Amaçlıdır</h2>
-<p>Faldium, yapay zeka destekli bir eğlence uygulamasıdır. Sunulan tüm yorumlar yalnızca eğlence amaçlıdır ve gerçek bir öngörü, profesyonel tavsiye veya kesin bilgi içermez.</p>
+<p>Faldium, yapay zekâ destekli bir eğlence uygulamasıdır. Sunulan tüm yorumlar yalnızca eğlence amaçlıdır ve gerçek bir öngörü, profesyonel tavsiye veya kesin bilgi içermez.</p>
 <div class="highlight">
-Uygulamadaki içeriklere dayanarak önemli kararlar almayınız.
+Uygulamadaki içeriklere dayanarak kişisel, finansal, sağlıkla ilgili veya hukuki kararlar almayınız.
 </div>
 </section>
 
 <section>
 <h2>Hesap</h2>
-<p>Uygulamayı kullanmak için en az 13 yaşında olmalısınız. Hesabınızdan ve hesabınızla yapılan işlemlerden siz sorumlusunuz. Hesabınızı istediğiniz zaman uygulamadan silebilirsiniz.</p>
+<p>Uygulamayı kullanmak için en az 16 yaşında olmalısınız. Hesabınızdan ve hesabınızla yapılan işlemlerden siz sorumlusunuz. Hesabınızı istediğiniz zaman uygulamadan silebilirsiniz (Ayarlar › Hesabımı Sil).</p>
 </section>
 
 <section>
-<h2>Bir Akıl Ver</h2>
-<p>Bir Akıl Ver, giriş yapmış kullanıcıların iki veya üç cevap seçenekli bir soru yayınlamasını ve diğer kullanıcıların oy vermesini sağlar. Günde en fazla 3 soru sorabilirsiniz.</p>
+<h2>Anket</h2>
+<p>Anketleri Faldium ekibi oluşturur. Giriş yapmış kullanıcılar anketlere oy verebilir.</p>
 <ul>
-<li>Oylar ve sonuçlar, uygulamanın diğer kullanıcılarının görüşlerini gösterir. Profesyonel tavsiye değildir ve bir şeyi öngörmez.</li>
-<li>Her kullanıcı bir soruya bir kez oy verebilir. Verilen oy değiştirilemez.</li>
-<li>Sorunuz diğer kullanıcılara gerçek adınızla değil, bir takma adla gösterilir.</li>
-<li>Sorular yayınlanmadan önce veya sonra otomatik olarak (yapay zeka dahil) ve elle kontrol edilebilir. Bir sorunun yayınlanıp yayınlanmayacağına biz karar veririz; herhangi bir soruyu önceden haber vererek veya vermeden reddedebilir, gizleyebilir ya da kaldırabiliriz.</li>
+<li>Her kullanıcı bir ankete bir kez oy verebilir. Verilen oy değiştirilemez.</li>
+<li>Sonuçlar, oy verdikten sonra gösterilir. Anketin süresi dolduğunda sonuçlar, oy vermemiş olanlar dahil tüm kullanıcılara görünür hale gelir.</li>
+<li>Anket sonuçları uygulama kullanıcılarının görüşlerini gösterir; profesyonel tavsiye değildir ve bir şeyi öngörmez.</li>
+</ul>
+</section>
+
+<section>
+<h2>Topluluk</h2>
+<p>Topluluk, giriş yapmış kullanıcıların kısa mesajlar paylaşmasını ve mesajlara tepki vermesini sağlayan herkese açık bir alandır. Yayınlanan mesajlar, giriş yapmadan uygulamayı kullananlar dahil herkese görünür. Yorum özelliği açıldığında kullanıcılar mesajlara yorum da yazabilecektir.</p>
+<ul>
+<li>Mesaj (ve yorum özelliği açıldığında yorum) paylaşmadan önce Topluluk Kurallarını kabul etmeniz gerekir. Kurallar önemli ölçüde değişirse yeniden kabul etmeniz istenebilir.</li>
+<li>Paylaşabileceğiniz mesaj sayısına günlük sınırlar uygulanır; yeni hesaplar için ilk günlerde daha düşük sınırlar geçerli olabilir. Bu sınırlar uygulama içinde gösterilir ve zaman içinde değişebilir.</li>
+<li>Mesajlar paylaşılmadan önce otomatik olarak (yapay zekâ dahil) kontrol edilir ve bir yöneticinin onayından sonra yayınlanır.</li>
+<li>Mesajlar onaylandıktan sonra 30 gün boyunca görünür. Bu süre dolunca mesaj Topluluk'ta gösterilmez; doğrudan bağlantıyla da erişilemez. Gizlenen içerik, hesabınızı silene kadar sistemimizde saklanabilir (ayrıntılar Gizlilik Politikası'nda).</li>
+<li>Bir içeriğin yayınlanıp yayınlanmayacağına biz karar veririz; herhangi bir mesajı önceden haber vererek veya vermeden reddedebilir, gizleyebilir ya da kaldırabiliriz. Bu kararlara itiraz hakkınız saklıdır (aşağıdaki "Moderasyon Kararlarına İtiraz" bölümüne bakın).</li>
+<li>Yorum özelliği açıldığında kendi yorumlarınızı silebilirsiniz; yorumlar düzenlenemez. Altında başkalarının cevapları olan bir yorumu sildiğinizde yorum "Bu yorum silindi" olarak görünür.</li>
+<li>Mesajlar ve tepkiler diğer kullanıcıların görüşlerini yansıtır; Faldium'un görüşü değildir ve profesyonel tavsiye değildir.</li>
 </ul>
 </section>
 
 <section>
 <h2>İçerik Kuralları</h2>
-<p>Uygunsuz içeriğe ve kötüye kullanan kullanıcılara tolerans gösterilmez. Aşağıdaki içerikleri paylaşmamayı kabul edersiniz:</p>
+<p>Uygunsuz içeriğe ve kötüye kullanan kullanıcılara tolerans gösterilmez. Topluluk mesajlarında ve takma adınızda aşağıdaki içerikleri paylaşmamayı kabul edersiniz:</p>
 <ul>
 <li>İnsanlara hakaret eden, onları taciz eden, tehdit eden veya ayrımcılık yapan içerik ya da nefret söylemi</li>
 <li>Cinsel, şiddet içeren, kendine zarar vermeyi veya yasa dışı bir faaliyeti teşvik eden içerik</li>
-<li>Kendinize veya başkalarına ait kişisel bilgiler (gerçek kişi adları, telefon, adres, e-posta, kimlik numarası)</li>
-<li>Spam, reklam veya yanıltıcı içerik; başkalarının haklarını ihlal eden içerik</li>
+<li>Kendinize veya başkalarına ait kişisel bilgiler (gerçek kişi adları, telefon, adres, e-posta, kimlik numarası, sosyal medya hesabı)</li>
+<li>Spam, reklam, bağlantı veya yanıltıcı içerik; başkalarının haklarını ihlal eden içerik</li>
 </ul>
 <p>Takma adınız da bu kurallara uymalıdır. Uymayan takma adı değiştirebilir veya kaldırabiliriz.</p>
 </section>
 
 <section>
 <h2>Şikâyet ve Engelleme</h2>
-<p>Soru ekranındaki menüden bir soruyu bildirebilir ve yazarını engelleyebilirsiniz. Engellediğiniz kullanıcıların soruları sizden gizlenir; engeli Ayarlar &rsaquo; Engellenenler'den kaldırabilirsiniz. Şikâyetleri inceler, soruları gizleyebilir, bu kuralları ihlal eden hesapları kısıtlayabilir veya kapatabiliriz.</p>
+<p>Topluluk'taki her mesajın menüsünden (⋯) içeriği şikâyet edebilir ve yazarını engelleyebilirsiniz. Engellediğiniz kullanıcıların içerikleri sizden gizlenir; engeli Ayarlar › Engellenenler'den kaldırabilirsiniz. Şikâyetleri inceler; kurallara uymayan içerikleri gizler veya kaldırırız. Aynı içerik birden fazla kullanıcı tarafından şikâyet edilirse, yönetici kararına kadar otomatik olarak gizlenebilir. Şikâyet ve moderasyon kayıtları, bu kuralları uygulamak ve itirazları değerlendirmek için gerekli süre boyunca saklanır.</p>
+</section>
+
+<section>
+<h2>Moderasyon Kararlarına İtiraz</h2>
+<p>İçerikler yapay zekâ destekli sistemlerle kontrol edilir; yapay zekâ hata yapabilir. İçeriğinizin reddedildiğini, gizlendiğini veya kaldırıldığını ya da hesabınızın Topluluk'tan uzaklaştırıldığını düşünüyorsanız bu karara itiraz edebilirsiniz. İtirazınızı hello@abit.studio adresine, ilgili içeriği veya hesabınızı belirterek yazın. İtirazınız, otomatik karar vermeyen bir kişi tarafından insan incelemesiyle değerlendirilir; sonuç size e-posta ile bildirilir. Gerekli gördüğümüzde kararı yeniden inceler, içeriği yeniden yayınlar veya uzaklaştırmayı kaldırırız.</p>
+</section>
+
+<section>
+<h2>Topluluk'tan Uzaklaştırma</h2>
+<p>Bu kuralları ihlal eden hesapları Topluluk'tan uzaklaştırabiliriz. Uzaklaştırılan hesap mesaj, tepki ve şikâyet gönderemez ve içerikleri diğer kullanıcılardan gizlenir. Uzaklaştırma yalnızca Topluluk'u etkiler; uygulamanın diğer özelliklerini kullanmaya devam edebilirsiniz. Uzaklaştırılan bir hesabın yeni bir hesapla Topluluk'a tekrar katılması engellenebilir. Uzaklaştırmaya itiraz için yukarıdaki bölüme bakın (hello@abit.studio).</p>
 </section>
 
 <section>
 <h2>İçeriğiniz</h2>
-<p>Yazdıklarınızın sahibi sizsiniz. Bir soru yayınlayarak ABit'e, o soruyu uygulamada saklama, gösterme ve işleme (kontrol etme dahil) konusunda; yayında kaldığı sürece ve hizmeti çalıştırmak için gerektiği kadar geçerli, sınırlı ve münhasır olmayan bir hak vermiş olursunuz. Yayınladığınız içerikten ve yüklediğiniz fotoğraflardan siz sorumlusunuz.</p>
+<p>Yazdıklarınızın sahibi sizsiniz. Topluluk'ta bir mesaj paylaşarak, o içeriği uygulamada saklama, gösterme ve işleme (kontrol etme dahil) konusunda; yayında kaldığı sürece, hesabınız silinene kadar ve hizmeti çalıştırmak için gerektiği kadar geçerli, sınırlı ve münhasır olmayan bir hak vermiş olursunuz. Paylaştığınız içerikten ve yüklediğiniz fotoğraflardan siz sorumlusunuz.</p>
 </section>
 
 <section>
 <h2>Ödemeler</h2>
-<p>Uygulamada ücretsiz ve premium içerikler sunulmaktadır.</p>
-<ul>
-<li>Ödemeler Google Play veya App Store üzerinden yapılır</li>
-<li>Fiyatlar bölgeye ve vergilere göre değişebilir</li>
-<li>Dijital içerikler genellikle iade edilmez</li>
-</ul>
-<p>İade süreçleri Google Play ve App Store politikalarına tabidir.</p>
+<p>Uygulamada şu anda ücretli özellik sunulmamaktadır. İleride ücretli özellik eklenirse ödemeler Google Play veya App Store üzerinden yapılır; fiyatlar bölgeye ve vergilere göre değişebilir ve iade süreçleri Google Play ve App Store politikalarına tabidir.</p>
 </section>
 
 <section>
 <h2>Kullanım</h2>
-<p>Uygulamayı kötüye kullanmamayı, sistemi bozacak davranışlarda bulunmamayı kabul edersiniz.</p>
+<p>Uygulamayı kötüye kullanmamayı, sistemi bozacak veya aşırı yükleyecek davranışlarda bulunmamayı kabul edersiniz.</p>
 </section>
 
 <section>
 <h2>Kamera ve Mikrofon Kullanımı</h2>
-<p>Kahve fincanı ve el fotoğrafları çekmek için kamera, Rüya Tabiri'nde sesli anlatım için mikrofon izni vermeyi kabul edersiniz. Bu izinleri cihaz ayarlarından istediğiniz zaman kapatabilirsiniz.</p>
+<p>Kahve fincanı ve el fotoğrafları çekmek için kamera, Rüya Tabiri ve Topluluk'ta sesle yazma için mikrofon izni vermeyi kabul edersiniz. Ses kaydınız yalnızca yazıya çevrilmek için kullanılır ve saklanmaz. Bu izinleri cihaz ayarlarından istediğiniz zaman kapatabilirsiniz.</p>
 </section>
 
 <section>
 <h2>Fikri Mülkiyet</h2>
-<p>Uygulamadaki tüm içerikler ABit'e aittir ve ticari amaçla kullanılamaz.</p>
+<p><strong>Sizin içeriğiniz.</strong> Yazdığınız metinler, Topluluk'ta paylaştığınız mesajlar ve yüklediğiniz fotoğraflar üzerindeki haklar size aittir; Faldium bunlar üzerinde yalnızca "İçeriğiniz" bölümünde verdiğiniz sınırlı hakka sahiptir.</p>
+<p><strong>Uygulamaya ait içerik.</strong> Uygulamanın yazılımı, tasarımı, arayüzü, adı, logosu ve Faldium ekibinin hazırladığı metin ve görseller (Anket soruları dahil) Faldium'a veya lisans verenlerine aittir. Bunları izinsiz kopyalayamaz, çoğaltamaz, yeniden satamaz veya ticari amaçla kullanamazsınız.</p>
+<p><strong>Yapay zekâ çıktıları.</strong> Falınız, rüya yorumunuz ve benzeri yorumlar yapay zekâ ile üretilir. Bu çıktılar üzerinde münhasır bir hak iddia etmiyoruz ve çıktıların size özgü olacağını, başka kullanıcılara benzer çıktıların üretilmeyeceğini veya üçüncü kişilerin haklarını ihlal etmeyeceğini taahhüt etmiyoruz. Çıktıları kendi kişisel kullanımınız için kullanabilirsiniz; uygulamadaki çıktıları toplu olarak kopyalamak veya ticari bir hizmet olarak yeniden sunmak yasaktır.</p>
 </section>
 
 <section>
 <h2>Sorumluluk Reddi</h2>
-<p>Uygulama içeriğine, diğer kullanıcıların oyları ve soruları dahil, dayanarak alınan kararlardan ABit sorumlu değildir. Kullanım sorumluluğu size aittir.</p>
+<p>Uygulama içeriğine, diğer kullanıcıların anket oyları ve Topluluk mesajları dahil, dayanarak alınan kararlardan sorumlu değiliz. Diğer kullanıcıların paylaştığı içerikler onların sorumluluğundadır. Kullanım sorumluluğu size aittir.</p>
 </section>
 
 <section>
 <h2>Değişiklikler</h2>
-<p>Bu şartlar zaman zaman güncellenebilir. Uygulamayı kullanmaya devam etmeniz yeni şartları kabul ettiğiniz anlamına gelir.</p>
+<p>Bu şartlar zaman zaman güncellenebilir. Önemli değişiklikleri uygulama içinde duyururuz; uygulamayı kullanmaya devam etmeniz güncel şartları kabul ettiğiniz anlamına gelir.</p>
 </section>
 
 <section>
 <h2>İletişim</h2>
 <p>hello@abit.studio</p>
 </section>
-`
-};
-
-function setLang(lang) {
-  document.getElementById("content").innerHTML = content[lang];
-  document.getElementById("updated").textContent = updated[lang];
-
-  document.getElementById("btn-en").classList.remove("active");
-  document.getElementById("btn-tr").classList.remove("active");
-
-  document.getElementById("btn-" + lang).classList.add("active");
-}
-
-// default TR
-setLang('tr');
-
-// fade-in fix
-window.addEventListener("load", () => {
-  document.body.style.opacity = "1";
-});
-
-</script>
+</main>
 
 </body>
 </html>
